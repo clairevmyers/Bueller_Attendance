@@ -40,16 +40,7 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let date = Date()
-        let calendar = Calendar.current
-        
-        let hour = calendar.component(.hour, from: date)
-        let minute = calendar.component(.minute, from: date)
-        let second = calendar.component(.second, from: date)
         print("\(hour):\(minute):\(second)")
-        
-        let day = calendar.component(.day, from: date)
-        let month = calendar.component(.month, from: date)
         print("\(day).\(month)")
         
         DateText.text =  "\(month)/\(day)"

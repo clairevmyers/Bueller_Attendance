@@ -17,6 +17,7 @@
 		F445BAFB1FD9B2D6005957BD /* download-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F445BAFA1FD9B2D6005957BD /* download-1.jpg */; };
 		F445BAFD1FD9B356005957BD /* rawImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F445BAFC1FD9B356005957BD /* rawImage.jpg */; };
 		F445BAFF1FD9BFCE005957BD /* DK Midnight Chalker.otf in Resources */ = {isa = PBXBuildFile; fileRef = F445BAFE1FD9BCED005957BD /* DK Midnight Chalker.otf */; };
+		F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F445BAFA1FD9B2D6005957BD /* download-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "download-1.jpg"; path = "../../../download-1.jpg"; sourceTree = "<group>"; };
 		F445BAFC1FD9B356005957BD /* rawImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rawImage.jpg; path = ../../../rawImage.jpg; sourceTree = "<group>"; };
 		F445BAFE1FD9BCED005957BD /* DK Midnight Chalker.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DK Midnight Chalker.otf"; path = "../../../../Downloads/david-kerkhoff_dk-midnight-chalker/DK Midnight Chalker.otf"; sourceTree = "<group>"; };
+		F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				F445BAFE1FD9BCED005957BD /* DK Midnight Chalker.otf */,
 				F445BAFA1FD9B2D6005957BD /* download-1.jpg */,
 				F445BAFC1FD9B356005957BD /* rawImage.jpg */,
+				F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */,
 			);
 			path = "Bueller Attendance";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
+				F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
