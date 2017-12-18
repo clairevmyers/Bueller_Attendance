@@ -13,7 +13,7 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var PickerLabel: UILabel!
     @IBOutlet weak var SchedulePicker: UIPickerView!
     
-    let schedules = ["Normals", "Flex", "Pepfest", "Finals Day 1", "Finals Day 2"]
+    let schedules = ["Normal", "Flex", "Pepfest", "Finals Day 1", "Finals Day 2"]
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int
     {
