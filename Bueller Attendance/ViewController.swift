@@ -44,11 +44,6 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         print("\(day).\(month)")
         
         DateText.text =  "\(month)/\(day)"
-        
-        
-        
-        
-
     }
 
     override func didReceiveMemoryWarning()

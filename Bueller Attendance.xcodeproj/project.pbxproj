@@ -18,6 +18,7 @@
 		F445BAFD1FD9B356005957BD /* rawImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F445BAFC1FD9B356005957BD /* rawImage.jpg */; };
 		F445BAFF1FD9BFCE005957BD /* DK Midnight Chalker.otf in Resources */ = {isa = PBXBuildFile; fileRef = F445BAFE1FD9BCED005957BD /* DK Midnight Chalker.otf */; };
 		F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */; };
+		F4F6388A1FEC259800551578 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F638891FEC259800551578 /* Group.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F445BAFC1FD9B356005957BD /* rawImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rawImage.jpg; path = ../../../rawImage.jpg; sourceTree = "<group>"; };
 		F445BAFE1FD9BCED005957BD /* DK Midnight Chalker.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DK Midnight Chalker.otf"; path = "../../../../Downloads/david-kerkhoff_dk-midnight-chalker/DK Midnight Chalker.otf"; sourceTree = "<group>"; };
 		F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataViewController.swift; sourceTree = "<group>"; };
+		F4F638891FEC259800551578 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				F445BACC1FD9B025005957BD /* AppDelegate.swift */,
 				F445BACE1FD9B025005957BD /* ViewController.swift */,
 				F445BAD01FD9B025005957BD /* Main.storyboard */,
+				F4F638891FEC259800551578 /* Group.swift */,
 				F445BAD31FD9B025005957BD /* Assets.xcassets */,
 				F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */,
 				F445BAD81FD9B025005957BD /* Info.plist */,
@@ -277,6 +280,7 @@
 				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
 				F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
+				F4F6388A1FEC259800551578 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
