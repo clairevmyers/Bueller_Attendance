@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5E175C21FFD4B7E008A4753 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175C11FFD4B7E008A4753 /* Student.swift */; };
 		F40855D21FFBF97F007E5428 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40855D11FFBF97F007E5428 /* Group.swift */; };
 		F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACC1FD9B025005957BD /* AppDelegate.swift */; };
 		F445BACF1FD9B025005957BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACE1FD9B025005957BD /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5E175C11FFD4B7E008A4753 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Student.swift; path = ../Student.swift; sourceTree = "<group>"; };
 		F40855D11FFBF97F007E5428 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Group.swift; path = ../Group.swift; sourceTree = "<group>"; };
 		F445BAC91FD9B025005957BD /* Bueller Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bueller Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F445BACC1FD9B025005957BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				F445BAD81FD9B025005957BD /* Info.plist */,
 				F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */,
 				F40855D11FFBF97F007E5428 /* Group.swift */,
+				A5E175C11FFD4B7E008A4753 /* Student.swift */,
 			);
 			path = "Bueller Attendance";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
 				F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
+				A5E175C21FFD4B7E008A4753 /* Student.swift in Sources */,
 				F40855D21FFBF97F007E5428 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
