@@ -72,6 +72,9 @@
                                 <state key="normal" title="+ Add a Student">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vpC-aa-Oho" kind="show" id="nQB-NZ-kkL"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SO0-8o-gHI">
                                 <rect key="frame" x="86" y="139" width="646" height="85"/>
@@ -105,13 +108,29 @@
                     <view key="view" contentMode="scaleToFill" id="cYg-3V-K5W">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gn8-yA-OdS">
+                                <rect key="frame" x="164" y="305" width="440" height="415"/>
+                                <color key="backgroundColor" red="0.01430633817" green="0.37427137310000003" blue="0.1185076234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="440" id="2UT-vG-1Ut"/>
+                                    <constraint firstAttribute="height" constant="415" id="6o0-8U-cCI"/>
+                                    <constraint firstAttribute="width" constant="440" id="Igi-lw-Kfu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="415" id="SMk-Yt-qsg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gn8-yA-OdS" firstAttribute="centerY" secondItem="cYg-3V-K5W" secondAttribute="centerY" id="Dsp-qz-LWd"/>
+                            <constraint firstItem="Gn8-yA-OdS" firstAttribute="centerX" secondItem="cYg-3V-K5W" secondAttribute="centerX" id="ujM-Iv-o1o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="faU-so-wdc"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WV3-hr-swM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840" y="748"/>
+            <point key="canvasLocation" x="839.84375" y="747.65625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
