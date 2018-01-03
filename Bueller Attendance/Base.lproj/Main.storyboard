@@ -18,10 +18,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Group View-->
         <scene sceneID="09B-II-eRt">
             <objects>
-                <viewController id="YpO-wC-PuT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupCreationBoard" id="YpO-wC-PuT" customClass="GroupView" customModule="Bueller_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AvM-YP-0JT">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="24.21875" y="747.65625"/>
         </scene>
-        <!--View Controller-->
+        <!--Student View-->
         <scene sceneID="ceV-Qk-xIb">
             <objects>
-                <viewController id="vpC-aa-Oho" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StudentBoard" id="vpC-aa-Oho" customClass="StudentView" customModule="Bueller_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cYg-3V-K5W">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,12 +111,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WV3-hr-swM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="748"/>
+            <point key="canvasLocation" x="840" y="748"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bueller_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LandingBoard" id="BYZ-38-t0r" customClass="ViewController" customModule="Bueller_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,7 +201,7 @@
         <!--View Controller-->
         <scene sceneID="Wlj-JW-bnb">
             <objects>
-                <viewController id="58H-Nd-j1K" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupBoard" id="58H-Nd-j1K" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A2Q-r2-QJK">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
