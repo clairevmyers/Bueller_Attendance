@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5E175C01FFD498D008A4753 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175BF1FFD498D008A4753 /* Student.swift */; };
 		F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACC1FD9B025005957BD /* AppDelegate.swift */; };
 		F445BACF1FD9B025005957BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACE1FD9B025005957BD /* ViewController.swift */; };
 		F445BAD21FD9B025005957BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445BAD01FD9B025005957BD /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5E175BF1FFD498D008A4753 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		F445BAC91FD9B025005957BD /* Bueller Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bueller Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F445BACC1FD9B025005957BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F445BACE1FD9B025005957BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				F445BACE1FD9B025005957BD /* ViewController.swift */,
 				F445BAD01FD9B025005957BD /* Main.storyboard */,
 				F4F638891FEC259800551578 /* Group.swift */,
+				A5E175BF1FFD498D008A4753 /* Student.swift */,
 				F445BAD31FD9B025005957BD /* Assets.xcassets */,
 				F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */,
 				F445BAD81FD9B025005957BD /* Info.plist */,
@@ -280,6 +283,7 @@
 				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
 				F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
+				A5E175C01FFD498D008A4753 /* Student.swift in Sources */,
 				F4F6388A1FEC259800551578 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
