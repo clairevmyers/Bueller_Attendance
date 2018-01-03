@@ -18,7 +18,7 @@ class Group
     
     var setHour = 0
     var setMinute = 0
-    let time = "\(hour) + \(minute)"
+    //var time = "\(setHour) + \(setMinute)"
     
     func setTime()
     {
