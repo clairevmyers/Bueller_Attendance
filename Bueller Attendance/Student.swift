@@ -11,7 +11,7 @@ class Student
     var FirstName = ""
     var LastName = ""
     var StudentID = ""
-    var Grade = 9
+    var Grade = 10
     var AttendanceStatus = "A"
     
     init()
