@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40855D21FFBF97F007E5428 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40855D11FFBF97F007E5428 /* Group.swift */; };
 		F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACC1FD9B025005957BD /* AppDelegate.swift */; };
 		F445BACF1FD9B025005957BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACE1FD9B025005957BD /* ViewController.swift */; };
 		F445BAD21FD9B025005957BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445BAD01FD9B025005957BD /* Main.storyboard */; };
@@ -14,11 +15,7 @@
 		F445BAD71FD9B025005957BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */; };
 		F445BAE21FD9B025005957BD /* Bueller_AttendanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BAE11FD9B025005957BD /* Bueller_AttendanceTests.swift */; };
 		F445BAED1FD9B025005957BD /* Bueller_AttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */; };
-		F445BAFB1FD9B2D6005957BD /* download-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F445BAFA1FD9B2D6005957BD /* download-1.jpg */; };
-		F445BAFD1FD9B356005957BD /* rawImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F445BAFC1FD9B356005957BD /* rawImage.jpg */; };
-		F445BAFF1FD9BFCE005957BD /* DK Midnight Chalker.otf in Resources */ = {isa = PBXBuildFile; fileRef = F445BAFE1FD9BCED005957BD /* DK Midnight Chalker.otf */; };
 		F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */; };
-		F4F6388A1FEC259800551578 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F638891FEC259800551578 /* Group.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F40855D11FFBF97F007E5428 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Group.swift; path = ../Group.swift; sourceTree = "<group>"; };
 		F445BAC91FD9B025005957BD /* Bueller Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bueller Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F445BACC1FD9B025005957BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F445BACE1FD9B025005957BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,11 +50,7 @@
 		F445BAE81FD9B025005957BD /* Bueller AttendanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bueller AttendanceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bueller_AttendanceUITests.swift; sourceTree = "<group>"; };
 		F445BAEE1FD9B025005957BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F445BAFA1FD9B2D6005957BD /* download-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "download-1.jpg"; path = "../../../download-1.jpg"; sourceTree = "<group>"; };
-		F445BAFC1FD9B356005957BD /* rawImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rawImage.jpg; path = ../../../rawImage.jpg; sourceTree = "<group>"; };
-		F445BAFE1FD9BCED005957BD /* DK Midnight Chalker.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DK Midnight Chalker.otf"; path = "../../../../Downloads/david-kerkhoff_dk-midnight-chalker/DK Midnight Chalker.otf"; sourceTree = "<group>"; };
 		F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataViewController.swift; sourceTree = "<group>"; };
-		F4F638891FEC259800551578 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,14 +104,11 @@
 				F445BACC1FD9B025005957BD /* AppDelegate.swift */,
 				F445BACE1FD9B025005957BD /* ViewController.swift */,
 				F445BAD01FD9B025005957BD /* Main.storyboard */,
-				F4F638891FEC259800551578 /* Group.swift */,
-				F445BAD31FD9B025005957BD /* Assets.xcassets */,
 				F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */,
+				F445BAD31FD9B025005957BD /* Assets.xcassets */,
 				F445BAD81FD9B025005957BD /* Info.plist */,
-				F445BAFE1FD9BCED005957BD /* DK Midnight Chalker.otf */,
-				F445BAFA1FD9B2D6005957BD /* download-1.jpg */,
-				F445BAFC1FD9B356005957BD /* rawImage.jpg */,
 				F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */,
+				F40855D11FFBF97F007E5428 /* Group.swift */,
 			);
 			path = "Bueller Attendance";
 			sourceTree = "<group>";
@@ -247,12 +238,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F445BAFF1FD9BFCE005957BD /* DK Midnight Chalker.otf in Resources */,
 				F445BAD71FD9B025005957BD /* LaunchScreen.storyboard in Resources */,
 				F445BAD41FD9B025005957BD /* Assets.xcassets in Resources */,
 				F445BAD21FD9B025005957BD /* Main.storyboard in Resources */,
-				F445BAFB1FD9B2D6005957BD /* download-1.jpg in Resources */,
-				F445BAFD1FD9B356005957BD /* rawImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +268,7 @@
 				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
 				F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
-				F4F6388A1FEC259800551578 /* Group.swift in Sources */,
+				F40855D21FFBF97F007E5428 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
