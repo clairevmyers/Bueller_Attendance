@@ -16,14 +16,7 @@ class Group
     //var groupList =
     var presentNumber = 0
     
-    var setHour = 0
-    var setMinute = 0
-    var time = "\(setHour) : \(setMinute)"
-    
-    func setTime()
-    {
-        
-    }
+
     
     //func getStudentList
     
