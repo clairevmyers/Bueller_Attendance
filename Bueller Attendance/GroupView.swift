@@ -21,14 +21,6 @@ class GroupView: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func ShowPopUp(_ sender: UIButton)
-    {
-    /*let PopOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StudentBoard") as! PopUpViewController
-        self.addChildViewController(PopOverVC)
-        PopOverVC.view.frame = self.view.frame
-        self.view.addSubview(PopOverVC.view)
-        PopOverVC.didMove(toParentViewController: self)*/
-    }
     
     /*
     // MARK: - Navigation
