@@ -13,6 +13,13 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var PickerLabel: UILabel!
     @IBOutlet weak var SchedulePicker: UIPickerView!
     
+    @IBAction func StartTimeField(_ sender: UITextField) {
+    }
+    @IBAction func EndTimeField(_ sender: UITextField) {
+    }
+    
+    let startPicker = UIDatePicker()
+    
     let schedules = ["Normal", "Flex", "Pepfest", "Finals Day 1", "Finals Day 2"]
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int
@@ -33,6 +40,17 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         PickerLabel.text = schedules[row]
+    }
+    
+    func createStartTimePicker()
+    {
+        let startToolbar = UIToolbar()
+        startToolbar.sizeToFit()
+        
+        let sDoneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
+        startToolbar.setItems([sDoneButton], animated: false)
+        //StartTimeField.inputAccessoryView = startToolbar
+        
     }
     
     @IBOutlet weak var DateText: UILabel!
