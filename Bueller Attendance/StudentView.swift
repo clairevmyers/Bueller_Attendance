@@ -61,8 +61,11 @@ class StudentView: UIViewController {
     {
         if FirstName.text != ""
         {
-            Student.init(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
+
+                var addedStudent = StudentClass(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
+                        addedStudent.addStudent(PlaceHolder: addedStudent )
             performSegue(withIdentifier: "popUpSegue", sender: self)
+            
             
         }
         else

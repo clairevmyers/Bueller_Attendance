@@ -1,21 +1,22 @@
 //
-//  Student.swift
+//  StudentClass.swift
 //  Bueller Attendance
 //
-//  Created by HANSEN, GRACE on 1/2/18.
+//  Created by Grace Hansen on 1/9/18.
 //  Copyright © 2018 District196. All rights reserved.
 //
-import Foundation
-class Student
-{
-    var studentList: Array<Student> = Array()
+
+import UIKit
+
+class StudentClass: NSObject {
+    
     var FirstName = ""
     var LastName = ""
     var StudentID = ""
     var Grade = 9
     var AttendanceStatus = "A"
     
-    init()
+    override init()
     {
         
     }
@@ -30,10 +31,14 @@ class Student
         //studentList.append()
     }
     
-    func addStudent(PlaceHolder: Student)
+    func addStudent(PlaceHolder: StudentClass)
     {
         studentList.append(PlaceHolder)
     }
     
 }
+
+var studentList: Array<StudentClass> = Array()
+var Grace = StudentClass(First: "Grace", Last: "Hansen", ID: "762954", Year: 9)
+
 
