@@ -273,6 +273,7 @@
 			files = (
 				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
+				A5E176042005373C008A4753 /* StudentClass.swift in Sources */,
 				A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */,
 				F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
 				A5E175C41FFD4C77008A4753 /* StudentView.swift in Sources */,
