@@ -12,11 +12,9 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
 
     @IBOutlet weak var PickerLabel: UILabel!
     @IBOutlet weak var SchedulePicker: UIPickerView!
-    
-    @IBAction func StartTimeField(_ sender: UITextField) {
-    }
-    @IBAction func EndTimeField(_ sender: UITextField) {
-    }
+    @IBOutlet weak var startTimeField: UITextField!
+    @IBOutlet weak var endTimeField: UITextField!
+   
     
     let startPicker = UIDatePicker()
     
@@ -49,7 +47,9 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         
         let sDoneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
         startToolbar.setItems([sDoneButton], animated: false)
-        //StartTimeField.inputAccessoryView = startToolbar
+        startTimeField.inputAccessoryView = startToolbar
+        startTimeField.inputView = startPicker
+        
         
     }
     
@@ -62,6 +62,8 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         print("\(day).\(month)")
         
         DateText.text =  "\(month)/\(day)"
+        
+        createStartTimePicker()
     }
 
     override func didReceiveMemoryWarning()
