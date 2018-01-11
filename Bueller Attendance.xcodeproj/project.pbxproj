@@ -11,7 +11,6 @@
 		A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175C51FFD4D63008A4753 /* GroupView.swift */; };
 		A5E175C81FFD5795008A4753 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175C71FFD5795008A4753 /* PopUpViewController.swift */; };
 		A5E176042005373C008A4753 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176032005373C008A4753 /* StudentClass.swift */; };
-		F40855D21FFBF97F007E5428 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40855D11FFBF97F007E5428 /* Group.swift */; };
 		F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACC1FD9B025005957BD /* AppDelegate.swift */; };
 		F445BACF1FD9B025005957BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACE1FD9B025005957BD /* ViewController.swift */; };
 		F445BAD21FD9B025005957BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445BAD01FD9B025005957BD /* Main.storyboard */; };
@@ -44,7 +43,6 @@
 		A5E175C51FFD4D63008A4753 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 		A5E175C71FFD5795008A4753 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		A5E176032005373C008A4753 /* StudentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
-		F40855D11FFBF97F007E5428 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Group.swift; path = ../Group.swift; sourceTree = "<group>"; };
 		F445BAC91FD9B025005957BD /* Bueller Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bueller Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F445BACC1FD9B025005957BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F445BACE1FD9B025005957BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 				F445BAD31FD9B025005957BD /* Assets.xcassets */,
 				F445BAD81FD9B025005957BD /* Info.plist */,
 				F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */,
-				F40855D11FFBF97F007E5428 /* Group.swift */,
 				A5E176032005373C008A4753 /* StudentClass.swift */,
 			);
 			path = "Bueller Attendance";
@@ -283,7 +280,6 @@
 				A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */,
 				F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
 				A5E175C41FFD4C77008A4753 /* StudentView.swift in Sources */,
-				F40855D21FFBF97F007E5428 /* Group.swift in Sources */,
 				A5E175C81FFD5795008A4753 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
