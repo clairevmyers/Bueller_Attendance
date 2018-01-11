@@ -19,6 +19,8 @@
 		F445BAE21FD9B025005957BD /* Bueller_AttendanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BAE11FD9B025005957BD /* Bueller_AttendanceTests.swift */; };
 		F445BAED1FD9B025005957BD /* Bueller_AttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */; };
 		F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */; };
+		F48EDFB62007DCC700AC3725 /* GroupClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EDFB52007DCC700AC3725 /* GroupClass.swift */; };
+		F4A40AB12006859200193ED6 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A40AB02006859200193ED6 /* StudentClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bueller_AttendanceUITests.swift; sourceTree = "<group>"; };
 		F445BAEE1FD9B025005957BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataViewController.swift; sourceTree = "<group>"; };
+		F48EDFB52007DCC700AC3725 /* GroupClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupClass.swift; sourceTree = "<group>"; };
+		F4A40AB02006859200193ED6 /* StudentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,10 +280,11 @@
 			files = (
 				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
-				A5E176042005373C008A4753 /* StudentClass.swift in Sources */,
 				A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */,
 				F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
+				F4A40AB12006859200193ED6 /* StudentClass.swift in Sources */,
 				A5E175C41FFD4C77008A4753 /* StudentView.swift in Sources */,
+				F48EDFB62007DCC700AC3725 /* GroupClass.swift in Sources */,
 				A5E175C81FFD5795008A4753 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
