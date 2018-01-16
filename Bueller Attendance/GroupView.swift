@@ -11,7 +11,12 @@ import UIKit
 class GroupView: UIViewController {
     @IBOutlet weak var myString: UILabel!
     var StudentName = String()
-    
+    @IBAction func StartTime(_ sender: Any) {
+        var temp = StartTimePicker.date as NSDate
+        startText.text = temp.description
+    }
+    @IBOutlet weak var StartTimePicker: UIDatePicker!
+    @IBOutlet weak var startText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

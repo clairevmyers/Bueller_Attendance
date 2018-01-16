@@ -40,18 +40,7 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         PickerLabel.text = schedules[row]
     }
     
-   /* func createStartTimePicker()
-    {
-        let startToolbar = UIToolbar()
-        startToolbar.sizeToFit()
-        
-        let sDoneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
-        startToolbar.setItems([sDoneButton], animated: false)
-        startTimeField.inputAccessoryView = startToolbar
-        startTimeField.inputView = startPicker
-        
-        
-    } */
+    
     
     @IBOutlet weak var DateText: UILabel!
     override func viewDidLoad()
@@ -63,7 +52,6 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         
         DateText.text =  "\(month)/\(day)"
         
-        //createStartTimePicker()
     }
 
     override func didReceiveMemoryWarning()
