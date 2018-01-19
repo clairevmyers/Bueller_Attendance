@@ -11,12 +11,15 @@ import UIKit
 class GroupView: UIViewController {
     @IBOutlet weak var myString: UILabel!
     var StudentName = String()
+    var passedGroup = GroupClass()
+    var passedStudent = StudentClass()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myString.text = StudentName
+        //myString.text = StudentName
+        print(passedStudent.FirstName)
         
         // Do any additional setup after loading the view.
     }
@@ -25,6 +28,8 @@ class GroupView: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
     
     
     /*

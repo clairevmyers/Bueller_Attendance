@@ -127,20 +127,10 @@
                                     <action selector="StartTimeField:" destination="z1q-7I-zgr" eventType="editingDidBegin" id="Ovg-nu-Gt1"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejd-R0-dj1">
-                                <rect key="frame" x="312" y="710" width="197" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PZY-Ja-rJT"/>
                     </view>
-                    <connections>
-                        <outlet property="myString" destination="Ejd-R0-dj1" id="HQp-94-HeJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7OF-kB-Pab" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="z1q-7I-zgr" userLabel="Exit" sceneMemberID="exit"/>
@@ -262,7 +252,6 @@
                                             <color key="titleColor" red="0.98780487804878048" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="PassStudent:" destination="vpC-aa-Oho" eventType="touchUpInside" id="vBe-dW-i6I"/>
                                             <segue destination="YpO-wC-PuT" kind="show" identifier="popUpSegue" id="hC2-tt-syN"/>
                                         </connections>
                                     </button>
@@ -304,7 +293,7 @@
                         <viewLayoutGuide key="safeArea" id="faU-so-wdc"/>
                     </view>
                     <connections>
-                        <outlet property="FirstName" destination="mIF-CN-dDK" id="9sk-0P-duZ"/>
+                        <outlet property="FirstName" destination="m6I-Jq-qLO" id="lIR-QW-Z0M"/>
                         <outlet property="GradeControl" destination="rkN-oL-FTZ" id="bv0-Me-oZN"/>
                         <outlet property="LastName" destination="mIF-CN-dDK" id="uc2-yW-YxG"/>
                         <outlet property="StudentID" destination="FyG-lp-bIz" id="6Wx-x4-uiJ"/>
@@ -382,7 +371,7 @@
                                     <color key="titleShadowColor" red="0.49564727269999997" green="0.55437423939999997" blue="0.6448541874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YpO-wC-PuT" kind="show" id="WSy-KP-4Fd"/>
+                                    <segue destination="YpO-wC-PuT" kind="show" identifier="newGroup" id="WSy-KP-4Fd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -468,6 +457,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="nQB-NZ-kkL"/>
         <segue reference="hC2-tt-syN"/>
     </inferredMetricsTieBreakers>
 </document>

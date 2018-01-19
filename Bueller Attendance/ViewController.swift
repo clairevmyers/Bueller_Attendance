@@ -35,23 +35,18 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         return schedules.count
     }
     
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         PickerLabel.text = schedules[row]
     }
-    
-   /* func createStartTimePicker()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        let startToolbar = UIToolbar()
-        startToolbar.sizeToFit()
-        
-        let sDoneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
-        startToolbar.setItems([sDoneButton], animated: false)
-        startTimeField.inputAccessoryView = startToolbar
-        startTimeField.inputView = startPicker
-        
-        
-    } */
+        var group = segue.destination as! GroupView
+        var newGroup = GroupClass()
+        group.passedGroup = newGroup
+    }
+   
     
     @IBOutlet weak var DateText: UILabel!
     override func viewDidLoad()

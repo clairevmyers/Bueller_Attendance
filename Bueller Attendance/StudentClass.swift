@@ -31,7 +31,7 @@ class StudentClass {
     
     func addStudent(PlaceHolder: StudentClass)
     {
-        //studentList.append(PlaceHolder)
+        
     }
     
 }
