@@ -56,29 +56,15 @@ class StudentView: UIViewController {
     
     
   
-  
-    @IBAction func PassStudent(_ sender: Any)
-    {
-        if FirstName.text != ""
-        {
-
-                var addedStudent = StudentClass(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
-                        addedStudent.addStudent(PlaceHolder: addedStudent )
-            performSegue(withIdentifier: "popUpSegue", sender: self)
-            
-            
-        }
-        else
-        {
-            print("Must contain a value")
-        }
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         var group = segue.destination as! GroupView
+        var student = StudentClass(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
+        group.passedGroup.studentList.append(student)
+        group.passedStudent = student
         
-        //group.StudentName = FirstName.text!
+        
     }
     
 }

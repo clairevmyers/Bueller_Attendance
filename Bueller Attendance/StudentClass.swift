@@ -6,15 +6,15 @@
 //  Copyright © 2018 District196. All rights reserved.
 //
 import UIKit
-class StudentClass: NSObject {
+class StudentClass {
     
     var FirstName = ""
     var LastName = ""
     var StudentID = ""
     var Grade = 9
     var AttendanceStatus = "A"
-    
-    override init()
+
+     init()
     {
         
     }
@@ -31,10 +31,9 @@ class StudentClass: NSObject {
     
     func addStudent(PlaceHolder: StudentClass)
     {
-        studentList.append(PlaceHolder)
+        
     }
     
 }
-var studentList: Array<StudentClass> = Array()
-var Grace = StudentClass(First: "Grace", Last: "Hansen", ID: "762954", Year: 9)
+
 
