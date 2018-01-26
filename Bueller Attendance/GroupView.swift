@@ -8,9 +8,11 @@
 
 import UIKit
 
-class GroupView: UIViewController {
-    @IBOutlet weak var myString: UILabel!
-    var StudentName = String()
+class GroupView: UIViewController  {
+    
+    let cellReuseIdentifier = "tableCell"
+
+    @IBOutlet weak var tableView: UITableView!
     var passedGroup = GroupClass()
     var passedStudent = StudentClass()
     
@@ -18,7 +20,6 @@ class GroupView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //myString.text = StudentName
         print(passedStudent.FirstName)
         
         // Do any additional setup after loading the view.
@@ -30,17 +31,16 @@ class GroupView: UIViewController {
     }
     
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath as IndexPath) as! tableCell
+        
+        //cell.labels["text"]?.Label.text = passedGroup.studentList[_].FirstName
+        
+        //return cell
+    }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+   
     
 }
 

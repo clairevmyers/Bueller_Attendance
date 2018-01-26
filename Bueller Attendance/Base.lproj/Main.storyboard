@@ -58,26 +58,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmj-la-uG1">
-                                <rect key="frame" x="247" y="848" width="251" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmj-la-uG1">
+                                <rect key="frame" x="247" y="949" width="251" height="37"/>
                                 <color key="backgroundColor" red="0.43359744548797607" green="0.48094987869262695" blue="0.5640791654586792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="34S-Mo-Szx"/>
+                                    <constraint firstAttribute="height" constant="37" id="Pka-8s-dBl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="DKMidnightChalker-Regular" family="DK Midnight Chalker" pointSize="25"/>
                                 <state key="normal" title="Import a Group List">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxO-fB-R8q">
-                                <rect key="frame" x="253" y="598" width="238" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43359744548797607" green="0.48094987869262695" blue="0.5640791654586792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
-                                <state key="normal" title="+ Add a Student">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="vpC-aa-Oho" kind="show" id="nQB-NZ-kkL"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRu-xd-xXi">
                                 <rect key="frame" x="111" y="110" width="202" height="21"/>
@@ -127,10 +118,44 @@
                                     <action selector="StartTimeField:" destination="z1q-7I-zgr" eventType="editingDidBegin" id="Ovg-nu-Gt1"/>
                                 </connections>
                             </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D42-lo-gl8">
+                                <rect key="frame" x="30" y="510" width="704" height="328"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="4Ey-Je-bNb"/>
+                                    <constraint firstAttribute="width" constant="704" id="Z79-U5-GGD"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxO-fB-R8q">
+                                <rect key="frame" x="253" y="866" width="238" height="57"/>
+                                <color key="backgroundColor" red="0.43359744548797607" green="0.48094987869262695" blue="0.5640791654586792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="fQ7-Fk-Dwn"/>
+                                    <constraint firstAttribute="width" constant="238" id="vGz-WS-tS2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <state key="normal" title="+ Add a Student">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vpC-aa-Oho" kind="show" id="nQB-NZ-kkL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cxO-fB-R8q" firstAttribute="centerY" secondItem="AvM-YP-0JT" secondAttribute="centerY" constant="382.5" id="G5Q-ny-Fqj"/>
+                            <constraint firstItem="D42-lo-gl8" firstAttribute="centerX" secondItem="AvM-YP-0JT" secondAttribute="centerX" constant="-2" id="Q5b-o5-xO7"/>
+                            <constraint firstItem="D42-lo-gl8" firstAttribute="centerY" secondItem="AvM-YP-0JT" secondAttribute="centerY" constant="162" id="XS1-JH-C27"/>
+                            <constraint firstItem="Lmj-la-uG1" firstAttribute="centerY" secondItem="AvM-YP-0JT" secondAttribute="centerY" constant="455.5" id="YLO-ye-yxO"/>
+                            <constraint firstItem="cxO-fB-R8q" firstAttribute="centerX" secondItem="AvM-YP-0JT" secondAttribute="centerX" constant="-12" id="YTr-wP-wrd"/>
+                            <constraint firstItem="Lmj-la-uG1" firstAttribute="centerX" secondItem="AvM-YP-0JT" secondAttribute="centerX" constant="-11.5" id="gU8-sH-KFl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PZY-Ja-rJT"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="D42-lo-gl8" id="goQ-jf-xJP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7OF-kB-Pab" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="z1q-7I-zgr" userLabel="Exit" sceneMemberID="exit"/>
@@ -457,7 +482,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nQB-NZ-kkL"/>
-        <segue reference="hC2-tt-syN"/>
+        <segue reference="WSy-KP-4Fd"/>
     </inferredMetricsTieBreakers>
 </document>
