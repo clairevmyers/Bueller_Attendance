@@ -20,6 +20,7 @@
 		F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */; };
 		F48EDFB62007DCC700AC3725 /* GroupClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EDFB52007DCC700AC3725 /* GroupClass.swift */; };
 		F4A40AB12006859200193ED6 /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A40AB02006859200193ED6 /* StudentClass.swift */; };
+		F4E22795201114E90035E68A /* GroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E22794201114E90035E68A /* GroupPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataViewController.swift; sourceTree = "<group>"; };
 		F48EDFB52007DCC700AC3725 /* GroupClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupClass.swift; sourceTree = "<group>"; };
 		F4A40AB02006859200193ED6 /* StudentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
+		F4E22794201114E90035E68A /* GroupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */,
 				F4A40AB02006859200193ED6 /* StudentClass.swift */,
 				F48EDFB52007DCC700AC3725 /* GroupClass.swift */,
+				F4E22794201114E90035E68A /* GroupPage.swift */,
 			);
 			path = "Bueller Attendance";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E22795201114E90035E68A /* GroupPage.swift in Sources */,
 				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
 				A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */,

@@ -21,7 +21,7 @@ class GroupView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myString.text = StudentName
+        //myString.text = StudentName
         
         // Do any additional setup after loading the view.
     }
