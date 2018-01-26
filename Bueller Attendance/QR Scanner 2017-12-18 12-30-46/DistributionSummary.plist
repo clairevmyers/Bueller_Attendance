@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>QR Scanner.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>9708A8DDE8D11D2E63679FB39ADA3EDC8624A883</string>
+				<key>dateExpires</key>
+				<string>12/18/18</string>
+				<key>type</key>
+				<string>iOS Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>96L2Y94678.org.District196.QR-Scanner</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>96L2Y94678</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>96L2Y94678.org.District196.QR-Scanner</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>QR Scanner.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>dec106cd-6855-4874-8e97-c7c071962820</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: org.District196.QR-Scanner</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>96L2Y94678</string>
+				<key>name</key>
+				<string>Independent School District 196</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

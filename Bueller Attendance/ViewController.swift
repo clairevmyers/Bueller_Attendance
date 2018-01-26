@@ -40,13 +40,8 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     {
         PickerLabel.text = schedules[row]
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        var group = segue.destination as! GroupView
-        var newGroup = GroupClass()
-        group.passedGroup = newGroup
-    }
-   
+    
+    
     
     @IBOutlet weak var DateText: UILabel!
     override func viewDidLoad()
@@ -58,7 +53,6 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         
         DateText.text =  "\(month)/\(day)"
         
-        //createStartTimePicker()
     }
 
     override func didReceiveMemoryWarning()
