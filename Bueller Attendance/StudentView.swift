@@ -61,8 +61,8 @@ class StudentView: UIViewController {
     {
         var group = segue.destination as! GroupView
         var student = StudentClass(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
-        group.passedGroup.studentList.append(student)
-        group.passedStudent = student
+        //group.passedGroup.studentList.append(student)
+        //group.passedStudent = student
         
         
     }

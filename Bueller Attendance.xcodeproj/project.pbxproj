@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E759056202385B40054B368 /* GroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E759055202385B40054B368 /* GroupPage.swift */; };
 		A50BBBF1200E7C68006D64EC /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176032005373C008A4753 /* StudentClass.swift */; };
 		A50BBBF2200FBB7B006D64EC /* GroupClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176062007E6E2008A4753 /* GroupClass.swift */; };
 		A5E175C41FFD4C77008A4753 /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175C31FFD4C77008A4753 /* StudentView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E759055202385B40054B368 /* GroupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPage.swift; sourceTree = "<group>"; };
 		A5E175C31FFD4C77008A4753 /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
 		A5E175C51FFD4D63008A4753 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 		A5E175C71FFD5795008A4753 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
@@ -59,8 +61,6 @@
 		F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bueller_AttendanceUITests.swift; sourceTree = "<group>"; };
 		F445BAEE1FD9B025005957BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataViewController.swift; sourceTree = "<group>"; };
-		F48EDFB52007DCC700AC3725 /* GroupClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupClass.swift; sourceTree = "<group>"; };
-		F4A40AB02006859200193ED6 /* StudentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +91,6 @@
 		A5E176052007E69F008A4753 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				F4A40AB02006859200193ED6 /* StudentClass.swift */,
-				F48EDFB52007DCC700AC3725 /* GroupClass.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -123,9 +121,9 @@
 			children = (
 				F445BACC1FD9B025005957BD /* AppDelegate.swift */,
 				F445BACE1FD9B025005957BD /* ViewController.swift */,
+				F445BAD01FD9B025005957BD /* Main.storyboard */,
 				A5E175C31FFD4C77008A4753 /* StudentView.swift */,
 				A5E175C51FFD4D63008A4753 /* GroupView.swift */,
-				F445BAD01FD9B025005957BD /* Main.storyboard */,
 				A5E175C71FFD5795008A4753 /* PopUpViewController.swift */,
 				F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */,
 				F445BAD31FD9B025005957BD /* Assets.xcassets */,
@@ -133,6 +131,7 @@
 				F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */,
 				A5E176032005373C008A4753 /* StudentClass.swift */,
 				A5E176062007E6E2008A4753 /* GroupClass.swift */,
+				7E759055202385B40054B368 /* GroupPage.swift */,
 			);
 			path = "Bueller Attendance";
 			sourceTree = "<group>";
@@ -289,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E759056202385B40054B368 /* GroupPage.swift in Sources */,
 				A50BBBF1200E7C68006D64EC /* StudentClass.swift in Sources */,
 				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
