@@ -8,19 +8,35 @@
 
 import UIKit
 
-class GroupView: UIViewController  {
+class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
-    let cellReuseIdentifier = "tableCell"
-
-    @IBOutlet weak var tableView: UITableView!
     var passedGroup = GroupClass()
     var passedStudent = StudentClass()
+    
+
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return groupArr[0].studentList.count
+    }
+    
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = groupArr[0].studentList[indexPath.row].FirstName
+        
+        return cell
+
+    }
+    
+
+
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(passedStudent.FirstName)
         
         // Do any additional setup after loading the view.
     }
@@ -30,17 +46,8 @@ class GroupView: UIViewController  {
         // Dispose of any resources that can be recreated.
     }
     
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath as IndexPath) as! tableCell
-        
-        //cell.labels["text"]?.Label.text = passedGroup.studentList[_].FirstName
-        
-        //return cell
-    }
     
-   
+
     
 }
 
