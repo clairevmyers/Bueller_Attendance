@@ -26,7 +26,6 @@ class StudentClass {
         StudentID = ID
         Grade = Year
         
-        //studentList.append()
     }
     
     func addStudent(PlaceHolder: StudentClass)

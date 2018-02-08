@@ -17,6 +17,7 @@ let second = calendar.component(.second, from: date)
 
 let day = calendar.component(.day, from: date)
 let month = calendar.component(.month, from: date)
+var groupArr = [GroupClass]()
 
 class GlobalDataViewController: UIViewController {
 

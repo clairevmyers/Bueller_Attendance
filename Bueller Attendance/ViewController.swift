@@ -14,12 +14,21 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var SchedulePicker: UIPickerView!
     @IBOutlet weak var startTimeField: UITextField!
     @IBOutlet weak var endTimeField: UITextField!
-   
+    
+    @IBOutlet weak var groupTable: UITableView!
+    
     
     let startPicker = UIDatePicker()
     
     let schedules = ["Normal", "Flex", "Pepfest", "Finals Day 1", "Finals Day 2"]
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        var segue = segue.destination as! GroupView
+        var group = GroupClass()
+        groupArr.append(group)
+        //segue.passedGroup = group
+    }
     func numberOfComponents(in pickerView: UIPickerView) -> Int
     {
         return 1
@@ -59,6 +68,21 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return groupArr[0].studentList.count
+    }
+    
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = groupArr[0].studentList[indexPath.row].FirstName
+        
+        return cell
+        
     }
 
 
