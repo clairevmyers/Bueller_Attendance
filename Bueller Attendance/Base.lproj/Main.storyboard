@@ -303,7 +303,7 @@
                                                     <color key="titleColor" red="0.98780487804878048" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="goBack:" destination="vpC-aa-Oho" eventType="touchUpInside" id="TQc-uS-Xll"/>
+                                                    <segue destination="YpO-wC-PuT" kind="show" id="xw4-FS-dtw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -547,4 +547,7 @@
             <point key="canvasLocation" x="874" y="29"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xw4-FS-dtw"/>
+    </inferredMetricsTieBreakers>
 </document>
