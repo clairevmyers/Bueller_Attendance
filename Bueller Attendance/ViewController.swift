@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource {
+class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var PickerLabel: UILabel!
     @IBOutlet weak var SchedulePicker: UIPickerView!
@@ -24,10 +24,8 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        var segue = segue.destination as! GroupView
-        var group = GroupClass()
-        groupArr.append(group)
-        //segue.passedGroup = group
+        var segue = segue.destination as! CreateGroup
+    
     }
     func numberOfComponents(in pickerView: UIPickerView) -> Int
     {
@@ -61,7 +59,6 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         print("\(day).\(month)")
         
         DateText.text =  "\(month)/\(day)"
-        
     }
 
     override func didReceiveMemoryWarning()
@@ -72,19 +69,19 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return groupArr[0].studentList.count
+        return groupArr.count
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = groupArr[0].studentList[indexPath.row].FirstName
+        cell.textLabel?.text = groupArr[indexPath.row].name
         
         return cell
         
     }
 
-
+    
 }
 

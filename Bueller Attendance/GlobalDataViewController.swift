@@ -19,8 +19,19 @@ let day = calendar.component(.day, from: date)
 let month = calendar.component(.month, from: date)
 var groupArr = [GroupClass]()
 
-class GlobalDataViewController: UIViewController {
+func getGroupIndex(groupName: String) -> Int
+{
+    for (value, GroupClass) in groupArr.enumerated()
+    {
+        if GroupClass.name == groupName
+        {
+            return value
+        }
+    }
+    return 0
+}
 
-    
+
+class GlobalDataViewController: UIViewController {
 
 }

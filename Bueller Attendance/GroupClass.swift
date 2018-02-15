@@ -11,19 +11,19 @@ import UIKit
 
 class GroupClass {
     
-    var Name = ""
+    var name = ""
     var studentList = [StudentClass]()
     var checkInDuration = 0.0
+    var index = Int()
     
     init()
     {
         
     }
     
-    init(TempName: String, time: Double)
+    init(tempName: String)
     {
-        Name = TempName
-        checkInDuration = time
+        name = tempName
     }
     
     

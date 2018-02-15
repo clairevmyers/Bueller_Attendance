@@ -18,36 +18,19 @@ class StudentView: UIViewController {
     @IBOutlet weak var GradeControl: UISegmentedControl!
     var Grade = 9;
     
+    @IBOutlet weak var addStudentButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
+    override func viewDidAppear(_ animated: Bool)
+    {
+      
     }
     
-    @IBAction func ChangeGrade(_ sender: Any)
-    {
-        if GradeControl.selectedSegmentIndex == 0
-        {
-            Grade = 9
-        }
-        else if GradeControl.selectedSegmentIndex == 1
-        {
-            Grade = 10
-        }
-        else if GradeControl.selectedSegmentIndex == 2
-        {
-            Grade = 11
-        }
-        else
-        {
-            Grade = 12
-        }
-        print(Grade)
-    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -68,19 +51,21 @@ class StudentView: UIViewController {
         
     }
     
+
+
+    @IBAction func goBack(_ sender: Any)
+    {
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+func TextFieldDidBeginEditing(textField: UITextField)
+{
+    print("Method Running")
 }
 
 
 
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destinationViewController.
- // Pass the selected object to the new view controller.
- }
- */
 
 
 
