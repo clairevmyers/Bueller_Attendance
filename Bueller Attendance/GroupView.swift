@@ -8,22 +8,30 @@
 
 import UIKit
 
-class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var passedGroup = GroupClass()
     var passedStudent = StudentClass()
     
+    
+    @IBOutlet weak var addStudentButton: UIButton!
+    var name = String()
+    var indexNum = Int()
 
+
+
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return groupArr[0].studentList.count
+        print(indexNum)
+        return groupArr[indexNum].studentList.count
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = groupArr[0].studentList[indexPath.row].FirstName
+        cell.textLabel?.text = groupArr[indexNum].studentList[indexPath.row].FirstName
         
         return cell
 
@@ -33,12 +41,10 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
     
     
-    
-    override func viewDidLoad() {
+     func viewDidAppear()
+     {
         super.viewDidLoad()
         
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,8 +52,9 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource  {
         // Dispose of any resources that can be recreated.
     }
     
-    
+   
+    }
 
     
-}
+
 
