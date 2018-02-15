@@ -1,602 +1,602 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 48;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 48;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		7E759056202385B40054B368 /* GroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E759055202385B40054B368 /* GroupPage.swift */; };
-		A50BBBF1200E7C68006D64EC /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176032005373C008A4753 /* StudentClass.swift */; };
-		A50BBBF2200FBB7B006D64EC /* GroupClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176062007E6E2008A4753 /* GroupClass.swift */; };
-		A50BBBF520125963006D64EC /* tableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BBBF420125963006D64EC /* tableCell.swift */; };
-		A50BBBF720320947006D64EC /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BBBF620320947006D64EC /* CreateGroup.swift */; };
-		A5E175C41FFD4C77008A4753 /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175C31FFD4C77008A4753 /* StudentView.swift */; };
-		A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175C51FFD4D63008A4753 /* GroupView.swift */; };
-		F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACC1FD9B025005957BD /* AppDelegate.swift */; };
-		F445BACF1FD9B025005957BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACE1FD9B025005957BD /* ViewController.swift */; };
-		F445BAD21FD9B025005957BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445BAD01FD9B025005957BD /* Main.storyboard */; };
-		F445BAD41FD9B025005957BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F445BAD31FD9B025005957BD /* Assets.xcassets */; };
-		F445BAD71FD9B025005957BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */; };
-		F445BAE21FD9B025005957BD /* Bueller_AttendanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BAE11FD9B025005957BD /* Bueller_AttendanceTests.swift */; };
-		F445BAED1FD9B025005957BD /* Bueller_AttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */; };
-		F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */; };
+        7E759056202385B40054B368 /* GroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E759055202385B40054B368 /* GroupPage.swift */; };
+        A50BBBF1200E7C68006D64EC /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176032005373C008A4753 /* StudentClass.swift */; };
+        A50BBBF2200FBB7B006D64EC /* GroupClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176062007E6E2008A4753 /* GroupClass.swift */; };
+        A50BBBF520125963006D64EC /* tableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BBBF420125963006D64EC /* tableCell.swift */; };
+        A50BBBF720320947006D64EC /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BBBF620320947006D64EC /* CreateGroup.swift */; };
+        A5E175C41FFD4C77008A4753 /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175C31FFD4C77008A4753 /* StudentView.swift */; };
+        A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175C51FFD4D63008A4753 /* GroupView.swift */; };
+        F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACC1FD9B025005957BD /* AppDelegate.swift */; };
+        F445BACF1FD9B025005957BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BACE1FD9B025005957BD /* ViewController.swift */; };
+        F445BAD21FD9B025005957BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445BAD01FD9B025005957BD /* Main.storyboard */; };
+        F445BAD41FD9B025005957BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F445BAD31FD9B025005957BD /* Assets.xcassets */; };
+        F445BAD71FD9B025005957BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */; };
+        F445BAE21FD9B025005957BD /* Bueller_AttendanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BAE11FD9B025005957BD /* Bueller_AttendanceTests.swift */; };
+        F445BAED1FD9B025005957BD /* Bueller_AttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */; };
+        F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F445BADE1FD9B025005957BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F445BAC11FD9B025005957BD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F445BAC81FD9B025005957BD;
-			remoteInfo = "Bueller Attendance";
-		};
-		F445BAE91FD9B025005957BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F445BAC11FD9B025005957BD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F445BAC81FD9B025005957BD;
-			remoteInfo = "Bueller Attendance";
-		};
+        F445BADE1FD9B025005957BD /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = F445BAC11FD9B025005957BD /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = F445BAC81FD9B025005957BD;
+            remoteInfo = "Bueller Attendance";
+        };
+        F445BAE91FD9B025005957BD /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = F445BAC11FD9B025005957BD /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = F445BAC81FD9B025005957BD;
+            remoteInfo = "Bueller Attendance";
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A50BBBF420125963006D64EC /* tableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCell.swift; sourceTree = "<group>"; };
-		A50BBBF620320947006D64EC /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
-		A5E175C31FFD4C77008A4753 /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
-		A5E175C51FFD4D63008A4753 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
-		A5E176032005373C008A4753 /* StudentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
-		A5E176062007E6E2008A4753 /* GroupClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupClass.swift; sourceTree = "<group>"; };
-		F445BAC91FD9B025005957BD /* Bueller Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bueller Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F445BACC1FD9B025005957BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F445BACE1FD9B025005957BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F445BAD11FD9B025005957BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F445BAD31FD9B025005957BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F445BAD61FD9B025005957BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F445BAD81FD9B025005957BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F445BADD1FD9B025005957BD /* Bueller AttendanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bueller AttendanceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F445BAE11FD9B025005957BD /* Bueller_AttendanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bueller_AttendanceTests.swift; sourceTree = "<group>"; };
-		F445BAE31FD9B025005957BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F445BAE81FD9B025005957BD /* Bueller AttendanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bueller AttendanceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bueller_AttendanceUITests.swift; sourceTree = "<group>"; };
-		F445BAEE1FD9B025005957BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataViewController.swift; sourceTree = "<group>"; };
+        A50BBBF420125963006D64EC /* tableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCell.swift; sourceTree = "<group>"; };
+        A50BBBF620320947006D64EC /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
+        A5E175C31FFD4C77008A4753 /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
+        A5E175C51FFD4D63008A4753 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+        A5E176032005373C008A4753 /* StudentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClass.swift; sourceTree = "<group>"; };
+        A5E176062007E6E2008A4753 /* GroupClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupClass.swift; sourceTree = "<group>"; };
+        F445BAC91FD9B025005957BD /* Bueller Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bueller Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+        F445BACC1FD9B025005957BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        F445BACE1FD9B025005957BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        F445BAD11FD9B025005957BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        F445BAD31FD9B025005957BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        F445BAD61FD9B025005957BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        F445BAD81FD9B025005957BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        F445BADD1FD9B025005957BD /* Bueller AttendanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bueller AttendanceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+        F445BAE11FD9B025005957BD /* Bueller_AttendanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bueller_AttendanceTests.swift; sourceTree = "<group>"; };
+        F445BAE31FD9B025005957BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        F445BAE81FD9B025005957BD /* Bueller AttendanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bueller AttendanceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+        F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bueller_AttendanceUITests.swift; sourceTree = "<group>"; };
+        F445BAEE1FD9B025005957BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F445BAC61FD9B025005957BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F445BADA1FD9B025005957BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F445BAE51FD9B025005957BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        F445BAC61FD9B025005957BD /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F445BADA1FD9B025005957BD /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F445BAE51FD9B025005957BD /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A5E176052007E69F008A4753 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
-		F445BAC01FD9B025005957BD = {
-			isa = PBXGroup;
-			children = (
-				F445BACB1FD9B025005957BD /* Bueller Attendance */,
-				F445BAE01FD9B025005957BD /* Bueller AttendanceTests */,
-				F445BAEB1FD9B025005957BD /* Bueller AttendanceUITests */,
-				F445BACA1FD9B025005957BD /* Products */,
-				A5E176052007E69F008A4753 /* Recovered References */,
-			);
-			sourceTree = "<group>";
-		};
-		F445BACA1FD9B025005957BD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F445BAC91FD9B025005957BD /* Bueller Attendance.app */,
-				F445BADD1FD9B025005957BD /* Bueller AttendanceTests.xctest */,
-				F445BAE81FD9B025005957BD /* Bueller AttendanceUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F445BACB1FD9B025005957BD /* Bueller Attendance */ = {
-			isa = PBXGroup;
-			children = (
-				F445BACC1FD9B025005957BD /* AppDelegate.swift */,
-				F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */,
-				F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */,
-				F445BAD01FD9B025005957BD /* Main.storyboard */,
-				A50BBBF620320947006D64EC /* CreateGroup.swift */,
-				F445BACE1FD9B025005957BD /* ViewController.swift */,
-				F445BAD01FD9B025005957BD /* Main.storyboard */,
-				A5E175C31FFD4C77008A4753 /* StudentView.swift */,
-				A5E176032005373C008A4753 /* StudentClass.swift */,
-				A5E175C51FFD4D63008A4753 /* GroupView.swift */,
-				A5E175C71FFD5795008A4753 /* PopUpViewController.swift */,
-				F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */,
-				F445BAD31FD9B025005957BD /* Assets.xcassets */,
-				F445BAD81FD9B025005957BD /* Info.plist */,
-				F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */,
-				A5E176032005373C008A4753 /* StudentClass.swift */,
-				A5E176062007E6E2008A4753 /* GroupClass.swift */,
-				7E759055202385B40054B368 /* GroupPage.swift */,
-			);
-			path = "Bueller Attendance";
-			sourceTree = "<group>";
-		};
-		F445BAE01FD9B025005957BD /* Bueller AttendanceTests */ = {
-			isa = PBXGroup;
-			children = (
-				F445BAE11FD9B025005957BD /* Bueller_AttendanceTests.swift */,
-				F445BAE31FD9B025005957BD /* Info.plist */,
-			);
-			path = "Bueller AttendanceTests";
-			sourceTree = "<group>";
-		};
-		F445BAEB1FD9B025005957BD /* Bueller AttendanceUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */,
-				F445BAEE1FD9B025005957BD /* Info.plist */,
-			);
-			path = "Bueller AttendanceUITests";
-			sourceTree = "<group>";
-		};
+        A5E176052007E69F008A4753 /* Recovered References */ = {
+            isa = PBXGroup;
+            children = (
+            );
+            name = "Recovered References";
+            sourceTree = "<group>";
+        };
+        F445BAC01FD9B025005957BD = {
+            isa = PBXGroup;
+            children = (
+                F445BACB1FD9B025005957BD /* Bueller Attendance */,
+                F445BAE01FD9B025005957BD /* Bueller AttendanceTests */,
+                F445BAEB1FD9B025005957BD /* Bueller AttendanceUITests */,
+                F445BACA1FD9B025005957BD /* Products */,
+                A5E176052007E69F008A4753 /* Recovered References */,
+            );
+            sourceTree = "<group>";
+        };
+        F445BACA1FD9B025005957BD /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                F445BAC91FD9B025005957BD /* Bueller Attendance.app */,
+                F445BADD1FD9B025005957BD /* Bueller AttendanceTests.xctest */,
+                F445BAE81FD9B025005957BD /* Bueller AttendanceUITests.xctest */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        F445BACB1FD9B025005957BD /* Bueller Attendance */ = {
+            isa = PBXGroup;
+            children = (
+                F445BACC1FD9B025005957BD /* AppDelegate.swift */,
+                F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */,
+                F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */,
+                F445BAD01FD9B025005957BD /* Main.storyboard */,
+                A50BBBF620320947006D64EC /* CreateGroup.swift */,
+                F445BACE1FD9B025005957BD /* ViewController.swift */,
+                F445BAD01FD9B025005957BD /* Main.storyboard */,
+                A5E175C31FFD4C77008A4753 /* StudentView.swift */,
+                A5E176032005373C008A4753 /* StudentClass.swift */,
+                A5E175C51FFD4D63008A4753 /* GroupView.swift */,
+                A5E175C71FFD5795008A4753 /* PopUpViewController.swift */,
+                F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */,
+                F445BAD31FD9B025005957BD /* Assets.xcassets */,
+                F445BAD81FD9B025005957BD /* Info.plist */,
+                F4752E041FE2F07B004E15E6 /* GlobalDataViewController.swift */,
+                A5E176032005373C008A4753 /* StudentClass.swift */,
+                A5E176062007E6E2008A4753 /* GroupClass.swift */,
+                7E759055202385B40054B368 /* GroupPage.swift */,
+            );
+            path = "Bueller Attendance";
+            sourceTree = "<group>";
+        };
+        F445BAE01FD9B025005957BD /* Bueller AttendanceTests */ = {
+            isa = PBXGroup;
+            children = (
+                F445BAE11FD9B025005957BD /* Bueller_AttendanceTests.swift */,
+                F445BAE31FD9B025005957BD /* Info.plist */,
+            );
+            path = "Bueller AttendanceTests";
+            sourceTree = "<group>";
+        };
+        F445BAEB1FD9B025005957BD /* Bueller AttendanceUITests */ = {
+            isa = PBXGroup;
+            children = (
+                F445BAEC1FD9B025005957BD /* Bueller_AttendanceUITests.swift */,
+                F445BAEE1FD9B025005957BD /* Info.plist */,
+            );
+            path = "Bueller AttendanceUITests";
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F445BAC81FD9B025005957BD /* Bueller Attendance */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F445BAF11FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller Attendance" */;
-			buildPhases = (
-				F445BAC51FD9B025005957BD /* Sources */,
-				F445BAC61FD9B025005957BD /* Frameworks */,
-				F445BAC71FD9B025005957BD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Bueller Attendance";
-			productName = "Bueller Attendance";
-			productReference = F445BAC91FD9B025005957BD /* Bueller Attendance.app */;
-			productType = "com.apple.product-type.application";
-		};
-		F445BADC1FD9B025005957BD /* Bueller AttendanceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F445BAF41FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller AttendanceTests" */;
-			buildPhases = (
-				F445BAD91FD9B025005957BD /* Sources */,
-				F445BADA1FD9B025005957BD /* Frameworks */,
-				F445BADB1FD9B025005957BD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F445BADF1FD9B025005957BD /* PBXTargetDependency */,
-			);
-			name = "Bueller AttendanceTests";
-			productName = "Bueller AttendanceTests";
-			productReference = F445BADD1FD9B025005957BD /* Bueller AttendanceTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F445BAE71FD9B025005957BD /* Bueller AttendanceUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F445BAF71FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller AttendanceUITests" */;
-			buildPhases = (
-				F445BAE41FD9B025005957BD /* Sources */,
-				F445BAE51FD9B025005957BD /* Frameworks */,
-				F445BAE61FD9B025005957BD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F445BAEA1FD9B025005957BD /* PBXTargetDependency */,
-			);
-			name = "Bueller AttendanceUITests";
-			productName = "Bueller AttendanceUITests";
-			productReference = F445BAE81FD9B025005957BD /* Bueller AttendanceUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
+        F445BAC81FD9B025005957BD /* Bueller Attendance */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = F445BAF11FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller Attendance" */;
+            buildPhases = (
+                F445BAC51FD9B025005957BD /* Sources */,
+                F445BAC61FD9B025005957BD /* Frameworks */,
+                F445BAC71FD9B025005957BD /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "Bueller Attendance";
+            productName = "Bueller Attendance";
+            productReference = F445BAC91FD9B025005957BD /* Bueller Attendance.app */;
+            productType = "com.apple.product-type.application";
+        };
+        F445BADC1FD9B025005957BD /* Bueller AttendanceTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = F445BAF41FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller AttendanceTests" */;
+            buildPhases = (
+                F445BAD91FD9B025005957BD /* Sources */,
+                F445BADA1FD9B025005957BD /* Frameworks */,
+                F445BADB1FD9B025005957BD /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                F445BADF1FD9B025005957BD /* PBXTargetDependency */,
+            );
+            name = "Bueller AttendanceTests";
+            productName = "Bueller AttendanceTests";
+            productReference = F445BADD1FD9B025005957BD /* Bueller AttendanceTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        F445BAE71FD9B025005957BD /* Bueller AttendanceUITests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = F445BAF71FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller AttendanceUITests" */;
+            buildPhases = (
+                F445BAE41FD9B025005957BD /* Sources */,
+                F445BAE51FD9B025005957BD /* Frameworks */,
+                F445BAE61FD9B025005957BD /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                F445BAEA1FD9B025005957BD /* PBXTargetDependency */,
+            );
+            name = "Bueller AttendanceUITests";
+            productName = "Bueller AttendanceUITests";
+            productReference = F445BAE81FD9B025005957BD /* Bueller AttendanceUITests.xctest */;
+            productType = "com.apple.product-type.bundle.ui-testing";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F445BAC11FD9B025005957BD /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = District196;
-				TargetAttributes = {
-					F445BAC81FD9B025005957BD = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					F445BADC1FD9B025005957BD = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = F445BAC81FD9B025005957BD;
-					};
-					F445BAE71FD9B025005957BD = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = F445BAC81FD9B025005957BD;
-					};
-				};
-			};
-			buildConfigurationList = F445BAC41FD9B025005957BD /* Build configuration list for PBXProject "Bueller Attendance" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = F445BAC01FD9B025005957BD;
-			productRefGroup = F445BACA1FD9B025005957BD /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				F445BAC81FD9B025005957BD /* Bueller Attendance */,
-				F445BADC1FD9B025005957BD /* Bueller AttendanceTests */,
-				F445BAE71FD9B025005957BD /* Bueller AttendanceUITests */,
-			);
-		};
+        F445BAC11FD9B025005957BD /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 0910;
+                LastUpgradeCheck = 0910;
+                ORGANIZATIONNAME = District196;
+                TargetAttributes = {
+                    F445BAC81FD9B025005957BD = {
+                        CreatedOnToolsVersion = 9.1;
+                        ProvisioningStyle = Automatic;
+                    };
+                    F445BADC1FD9B025005957BD = {
+                        CreatedOnToolsVersion = 9.1;
+                        ProvisioningStyle = Automatic;
+                        TestTargetID = F445BAC81FD9B025005957BD;
+                    };
+                    F445BAE71FD9B025005957BD = {
+                        CreatedOnToolsVersion = 9.1;
+                        ProvisioningStyle = Automatic;
+                        TestTargetID = F445BAC81FD9B025005957BD;
+                    };
+                };
+            };
+            buildConfigurationList = F445BAC41FD9B025005957BD /* Build configuration list for PBXProject "Bueller Attendance" */;
+            compatibilityVersion = "Xcode 8.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = F445BAC01FD9B025005957BD;
+            productRefGroup = F445BACA1FD9B025005957BD /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                F445BAC81FD9B025005957BD /* Bueller Attendance */,
+                F445BADC1FD9B025005957BD /* Bueller AttendanceTests */,
+                F445BAE71FD9B025005957BD /* Bueller AttendanceUITests */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F445BAC71FD9B025005957BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F445BAD71FD9B025005957BD /* LaunchScreen.storyboard in Resources */,
-				F445BAD41FD9B025005957BD /* Assets.xcassets in Resources */,
-				F445BAD21FD9B025005957BD /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F445BADB1FD9B025005957BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F445BAE61FD9B025005957BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        F445BAC71FD9B025005957BD /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                F445BAD71FD9B025005957BD /* LaunchScreen.storyboard in Resources */,
+                F445BAD41FD9B025005957BD /* Assets.xcassets in Resources */,
+                F445BAD21FD9B025005957BD /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F445BADB1FD9B025005957BD /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F445BAE61FD9B025005957BD /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F445BAC51FD9B025005957BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E759056202385B40054B368 /* GroupPage.swift in Sources */,
-				A50BBBF1200E7C68006D64EC /* StudentClass.swift in Sources */,
-				A50BBBF720320947006D64EC /* CreateGroup.swift in Sources */,
-				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
-				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
-				A50BBBF520125963006D64EC /* tableCell.swift in Sources */,
-				A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */,
-				F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
-				A50BBBF2200FBB7B006D64EC /* GroupClass.swift in Sources */,
-				A5E175C41FFD4C77008A4753 /* StudentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F445BAD91FD9B025005957BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F445BAE21FD9B025005957BD /* Bueller_AttendanceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F445BAE41FD9B025005957BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F445BAED1FD9B025005957BD /* Bueller_AttendanceUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        F445BAC51FD9B025005957BD /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                7E759056202385B40054B368 /* GroupPage.swift in Sources */,
+                A50BBBF1200E7C68006D64EC /* StudentClass.swift in Sources */,
+                A50BBBF720320947006D64EC /* CreateGroup.swift in Sources */,
+                F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
+                F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
+                A50BBBF520125963006D64EC /* tableCell.swift in Sources */,
+                A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */,
+                F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
+                A50BBBF2200FBB7B006D64EC /* GroupClass.swift in Sources */,
+                A5E175C41FFD4C77008A4753 /* StudentView.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F445BAD91FD9B025005957BD /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                F445BAE21FD9B025005957BD /* Bueller_AttendanceTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F445BAE41FD9B025005957BD /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                F445BAED1FD9B025005957BD /* Bueller_AttendanceUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F445BADF1FD9B025005957BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F445BAC81FD9B025005957BD /* Bueller Attendance */;
-			targetProxy = F445BADE1FD9B025005957BD /* PBXContainerItemProxy */;
-		};
-		F445BAEA1FD9B025005957BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F445BAC81FD9B025005957BD /* Bueller Attendance */;
-			targetProxy = F445BAE91FD9B025005957BD /* PBXContainerItemProxy */;
-		};
+        F445BADF1FD9B025005957BD /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = F445BAC81FD9B025005957BD /* Bueller Attendance */;
+            targetProxy = F445BADE1FD9B025005957BD /* PBXContainerItemProxy */;
+        };
+        F445BAEA1FD9B025005957BD /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = F445BAC81FD9B025005957BD /* Bueller Attendance */;
+            targetProxy = F445BAE91FD9B025005957BD /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F445BAD01FD9B025005957BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F445BAD11FD9B025005957BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F445BAD61FD9B025005957BD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        F445BAD01FD9B025005957BD /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                F445BAD11FD9B025005957BD /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                F445BAD61FD9B025005957BD /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F445BAEF1FD9B025005957BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		F445BAF01FD9B025005957BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F445BAF21FD9B025005957BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96L2Y94678;
-				INFOPLIST_FILE = "Bueller Attendance/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.district196;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F445BAF31FD9B025005957BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96L2Y94678;
-				INFOPLIST_FILE = "Bueller Attendance/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.district196;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F445BAF51FD9B025005957BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Bueller AttendanceTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.District196.Bueller-AttendanceTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bueller Attendance.app/Bueller Attendance";
-			};
-			name = Debug;
-		};
-		F445BAF61FD9B025005957BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Bueller AttendanceTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.District196.Bueller-AttendanceTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bueller Attendance.app/Bueller Attendance";
-			};
-			name = Release;
-		};
-		F445BAF81FD9B025005957BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Bueller AttendanceUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.District196.Bueller-AttendanceUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Bueller Attendance";
-			};
-			name = Debug;
-		};
-		F445BAF91FD9B025005957BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Bueller AttendanceUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.District196.Bueller-AttendanceUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Bueller Attendance";
-			};
-			name = Release;
-		};
+        F445BAEF1FD9B025005957BD /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+                MTL_ENABLE_DEBUG_INFO = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        F445BAF01FD9B025005957BD /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                SDKROOT = iphoneos;
+                SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        F445BAF21FD9B025005957BD /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 96L2Y94678;
+                INFOPLIST_FILE = "Bueller Attendance/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = org.district196;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        F445BAF31FD9B025005957BD /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 96L2Y94678;
+                INFOPLIST_FILE = "Bueller Attendance/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = org.district196;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
+        F445BAF51FD9B025005957BD /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = "Bueller AttendanceTests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "org.District196.Bueller-AttendanceTests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bueller Attendance.app/Bueller Attendance";
+            };
+            name = Debug;
+        };
+        F445BAF61FD9B025005957BD /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = "Bueller AttendanceTests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "org.District196.Bueller-AttendanceTests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bueller Attendance.app/Bueller Attendance";
+            };
+            name = Release;
+        };
+        F445BAF81FD9B025005957BD /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = "Bueller AttendanceUITests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "org.District196.Bueller-AttendanceUITests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = "Bueller Attendance";
+            };
+            name = Debug;
+        };
+        F445BAF91FD9B025005957BD /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = "Bueller AttendanceUITests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "org.District196.Bueller-AttendanceUITests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = "Bueller Attendance";
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F445BAC41FD9B025005957BD /* Build configuration list for PBXProject "Bueller Attendance" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F445BAEF1FD9B025005957BD /* Debug */,
-				F445BAF01FD9B025005957BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F445BAF11FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller Attendance" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F445BAF21FD9B025005957BD /* Debug */,
-				F445BAF31FD9B025005957BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F445BAF41FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller AttendanceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F445BAF51FD9B025005957BD /* Debug */,
-				F445BAF61FD9B025005957BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F445BAF71FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller AttendanceUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F445BAF81FD9B025005957BD /* Debug */,
-				F445BAF91FD9B025005957BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        F445BAC41FD9B025005957BD /* Build configuration list for PBXProject "Bueller Attendance" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                F445BAEF1FD9B025005957BD /* Debug */,
+                F445BAF01FD9B025005957BD /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        F445BAF11FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller Attendance" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                F445BAF21FD9B025005957BD /* Debug */,
+                F445BAF31FD9B025005957BD /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        F445BAF41FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller AttendanceTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                F445BAF51FD9B025005957BD /* Debug */,
+                F445BAF61FD9B025005957BD /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        F445BAF71FD9B025005957BD /* Build configuration list for PBXNativeTarget "Bueller AttendanceUITests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                F445BAF81FD9B025005957BD /* Debug */,
+                F445BAF91FD9B025005957BD /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = F445BAC11FD9B025005957BD /* Project object */;
+    };
+    rootObject = F445BAC11FD9B025005957BD /* Project object */;
 }
