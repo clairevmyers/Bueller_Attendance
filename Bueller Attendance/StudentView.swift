@@ -53,10 +53,6 @@ class StudentView: UIViewController {
     
 
 
-    @IBAction func goBack(_ sender: Any)
-    {
-        dismiss(animated: true, completion: nil)
-    }
 }
 
 func TextFieldDidBeginEditing(textField: UITextField)

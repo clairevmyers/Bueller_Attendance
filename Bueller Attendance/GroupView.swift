@@ -24,14 +24,14 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         print(indexNum)
-        return groupArr[indexNum].studentList.count
+        return passedGroup.studentList.count
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = groupArr[indexNum].studentList[indexPath.row].FirstName
+        cell.textLabel?.text = passedGroup.studentList[indexPath.row].FirstName
         
         return cell
 

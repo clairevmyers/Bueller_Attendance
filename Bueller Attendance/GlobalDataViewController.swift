@@ -19,16 +19,16 @@ let day = calendar.component(.day, from: date)
 let month = calendar.component(.month, from: date)
 var groupArr = [GroupClass]()
 
-func getGroupIndex(groupName: String) -> Int
+func getGroupIndex(groupName: String)
 {
     for (value, GroupClass) in groupArr.enumerated()
     {
         if GroupClass.name == groupName
         {
-            return value
+            GroupClass.index = value
         }
     }
-    return 0
+   
 }
 
 

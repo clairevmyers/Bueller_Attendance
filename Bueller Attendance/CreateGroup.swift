@@ -12,6 +12,7 @@ class CreateGroup: UIViewController {
 
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var groupName: UITextField!
+    var passingGroup = GroupClass()
     
     func viewDidAppear() {
         
@@ -34,14 +35,17 @@ class CreateGroup: UIViewController {
     @IBAction func createGroup(_ sender: Any)
     {
         var group = GroupClass(tempName: groupName.text!)
+        passingGroup = group
         groupArr.append(group)
         group.index = getGroupIndex(groupName: groupName.text!)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         var index = getGroupIndex(groupName: groupName.text!)
         var destination = segue.destination as! GroupView
+        destination.passedGroup = passingGroup
         destination.name = groupName.text!
         destination.indexNum = index
     }
