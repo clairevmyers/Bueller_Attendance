@@ -23,28 +23,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BUELLER ATTENDANCE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dex-fs-1Nt">
-                                <rect key="frame" x="154" y="497" width="505" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="0O5-iW-jPp"/>
-                                    <constraint firstAttribute="height" constant="30.5" id="O8Y-j7-XVm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="De2-6w-K4Q">
+                                <rect key="frame" x="20" y="397" width="728" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bueller Attendance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPE-yf-EZI">
+                                        <rect key="frame" x="89" y="82" width="551" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="51"/>
+                                        <color key="textColor" red="0.98780487804878048" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97281816709844571" green="0.022541649301702601" blue="0.067876257148247118" alpha="0.57174295774647887" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.2461705207824707" green="0.26964154839515686" blue="0.32363671064376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Dex-fs-1Nt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-174" id="8pJ-EM-9Ej"/>
-                            <constraint firstItem="Dex-fs-1Nt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ND3-QX-Ein"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152.5390625" y="394.43631039531476"/>
+            <point key="canvasLocation" x="1152.34375" y="394.3359375"/>
         </scene>
     </scenes>
 </document>

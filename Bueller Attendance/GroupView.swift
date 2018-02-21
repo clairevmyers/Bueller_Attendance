@@ -10,13 +10,15 @@ import UIKit
 
 class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var passedGroup = GroupClass()
-    var passedStudent = StudentClass()
     
     
     @IBOutlet weak var addStudentButton: UIButton!
+    @IBOutlet weak var groupLabel: UILabel!
     var name = String()
     var indexNum = Int()
+    var passedGroup = GroupClass()
+    var passedStudent = StudentClass()
+
 
 
 
@@ -24,27 +26,43 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         print(indexNum)
-        return passedGroup.studentList.count
+        for (String) in groupArr
+        {
+            print(String)
+        }
+        return groupArr[name]!.studentList.count
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = passedGroup.studentList[indexPath.row].FirstName
+        cell.textLabel?.text = groupArr[name]!.studentList[indexPath.row].FirstName
         
         return cell
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+
+        if(segue.identifier == "groupToStudent")
+        {
+                var view = segue.destination as! StudentView
+                view.groupName = name
+        }
+    }
+    
+ 
 
 
     
     
-     func viewDidAppear()
+    override func viewDidLoad()
      {
         super.viewDidLoad()
-        
+        groupLabel.text = name
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,8 +71,8 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
    
-    }
+
 
     
 
-
+}

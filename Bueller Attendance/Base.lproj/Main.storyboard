@@ -50,7 +50,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.11242267059415355" green="0.35889686434777324" blue="0.77882124352331605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.086975678023757511" green="0.29611883128966948" blue="0.66147182642487046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="440" id="VOe-Rj-3ns"/>
                                     <constraint firstAttribute="height" constant="415" id="cfJ-HR-xAv"/>
@@ -130,13 +130,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D42-lo-gl8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D42-lo-gl8">
                                 <rect key="frame" x="30" y="250" width="704" height="588"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="328" id="4Ey-Je-bNb"/>
-                                    <constraint firstAttribute="width" constant="704" id="Z79-U5-GGD"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="qDJ-cR-jJQ">
                                         <rect key="frame" x="0.0" y="28" width="704" height="44"/>
@@ -164,15 +161,20 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vpC-aa-Oho" kind="show" id="nQB-NZ-kkL"/>
+                                    <segue destination="vpC-aa-Oho" kind="show" identifier="groupToStudent" id="nQB-NZ-kkL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGJ-zl-AZT">
+                                <rect key="frame" x="224" y="76" width="320" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="39"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cxO-fB-R8q" firstAttribute="centerY" secondItem="AvM-YP-0JT" secondAttribute="centerY" constant="382.5" id="G5Q-ny-Fqj"/>
-                            <constraint firstItem="D42-lo-gl8" firstAttribute="centerX" secondItem="AvM-YP-0JT" secondAttribute="centerX" constant="-2" id="Q5b-o5-xO7"/>
-                            <constraint firstItem="D42-lo-gl8" firstAttribute="centerY" secondItem="AvM-YP-0JT" secondAttribute="centerY" constant="162" id="XS1-JH-C27"/>
                             <constraint firstItem="Lmj-la-uG1" firstAttribute="centerY" secondItem="AvM-YP-0JT" secondAttribute="centerY" constant="455.5" id="YLO-ye-yxO"/>
                             <constraint firstItem="cxO-fB-R8q" firstAttribute="centerX" secondItem="AvM-YP-0JT" secondAttribute="centerX" constant="-12" id="YTr-wP-wrd"/>
                             <constraint firstItem="Lmj-la-uG1" firstAttribute="centerX" secondItem="AvM-YP-0JT" secondAttribute="centerX" constant="-11.5" id="gU8-sH-KFl"/>
@@ -181,6 +183,7 @@
                     </view>
                     <connections>
                         <outlet property="addStudentButton" destination="cxO-fB-R8q" id="5Vw-yC-H4H"/>
+                        <outlet property="groupLabel" destination="eGJ-zl-AZT" id="JgM-wN-C1u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7OF-kB-Pab" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -369,25 +372,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLm-zw-4PM">
-                                <rect key="frame" x="300" y="131" width="65" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmV-KS-MtG">
                                 <rect key="frame" x="181" y="89" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGW-rK-osN">
-                                <rect key="frame" x="408" y="131" width="54" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXE-NT-KiJ">
@@ -417,22 +406,21 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4j5-II-eYc">
-                                <rect key="frame" x="195" y="672" width="380" height="53"/>
+                                <rect key="frame" x="195" y="692" width="380" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43359744548797607" green="0.48094987869262695" blue="0.5640791654586792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="41"/>
+                                <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="39"/>
                                 <state key="normal" title="+ Group">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.49564727269999997" green="0.55437423939999997" blue="0.6448541874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="GO3-5H-JGF" kind="show" id="XyC-iO-RZw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STs-44-1jh">
-                                <rect key="frame" x="181" y="733" width="416" height="40"/>
+                                <rect key="frame" x="177" y="782" width="416" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="38"/>
                                 <state key="normal" title="TAKE ATTENDANCE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -440,13 +428,19 @@
                                     <segue destination="58H-Nd-j1K" kind="show" id="bOB-NR-Uyn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGW-rK-osN">
+                                <rect key="frame" x="315" y="107" width="139" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="DateText" destination="KGW-rK-osN" id="zlv-nE-RRR"/>
-                        <outlet property="PickerLabel" destination="rXE-NT-KiJ" id="g57-KV-waJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -530,17 +524,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43359744550000001" green="0.4809498787" blue="0.56407916550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="stepper:" destination="58H-Nd-j1K" eventType="valueChanged" id="dIT-Ag-nL8"/>
-                                </connections>
                             </stepper>
                         </subviews>
                         <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="2od-o5-rUC"/>
                     </view>
-                    <connections>
-                        <outlet property="stepLabel" destination="iag-uw-qms" id="FAv-pH-hnv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBA-cN-1QN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -548,6 +536,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xw4-FS-dtw"/>
+        <segue reference="m4e-vx-aj0"/>
     </inferredMetricsTieBreakers>
 </document>
