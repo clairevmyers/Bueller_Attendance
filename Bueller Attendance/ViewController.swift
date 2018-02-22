@@ -10,14 +10,11 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var PickerLabel: UILabel!
-    @IBOutlet weak var SchedulePicker: UIPickerView!
-    @IBOutlet weak var startTimeField: UITextField!
-    @IBOutlet weak var endTimeField: UITextField!
     
     @IBOutlet weak var groupTable: UITableView!
+    var name = "Soccer"
     
-    
+    @IBOutlet var AttendanceButton: UIButton!
     @IBOutlet weak var DateText: UILabel!
     override func viewDidLoad()
     {
@@ -27,6 +24,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("\(day).\(month)")
         
         DateText.text =  "\(month)/\(day)"
+        
+
     }
 
     override func didReceiveMemoryWarning()
@@ -50,11 +49,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if(segue.identifier == "viewToGroupPage" )
+        {
+            var view = segue.destination as! GroupPage
+            view.groupName = (groupArr[name]?.name)!
+        }
+    }
 
     func viewDidAppear()
     {
         super.viewDidLoad()
-
     }
 }
 

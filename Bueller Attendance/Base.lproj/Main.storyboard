@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIE-R6-pJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-691.40625" y="747.65625"/>
+            <point key="canvasLocation" x="-413" y="851"/>
         </scene>
         <!--Group View-->
         <scene sceneID="09B-II-eRt">
@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7OF-kB-Pab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24" y="1181"/>
+            <point key="canvasLocation" x="-1336" y="1255"/>
         </scene>
         <!--Student View-->
         <scene sceneID="ceV-Qk-xIb">
@@ -354,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WV3-hr-swM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="1181"/>
+            <point key="canvasLocation" x="-2530" y="1561"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -425,7 +425,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="58H-Nd-j1K" kind="show" id="bOB-NR-Uyn"/>
+                                    <segue destination="58H-Nd-j1K" kind="show" identifier="viewToGroupPage" id="bOB-NR-Uyn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGW-rK-osN">
@@ -440,12 +440,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="AttendanceButton" destination="8bC-Xf-vdC" id="qWy-16-WmB"/>
                         <outlet property="DateText" destination="KGW-rK-osN" id="zlv-nE-RRR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.21875" y="29.296874999999996"/>
+            <point key="canvasLocation" x="-292" y="-29"/>
         </scene>
         <!--Group Page-->
         <scene sceneID="Wlj-JW-bnb">
@@ -462,6 +463,9 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fI3-Nx-47S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BK-hn-o4U">
                                 <rect key="frame" x="78" y="185" width="634" height="124"/>
@@ -471,6 +475,9 @@
                                 <state key="normal" title="Take Attendance">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="znf-a4-aPA" kind="show" identifier="groupPageToTakeAttendanceView" id="IA7-hO-r4M"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXt-oO-8aF">
                                 <rect key="frame" x="141" y="317" width="509" height="54"/>
@@ -529,13 +536,67 @@
                         <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="2od-o5-rUC"/>
                     </view>
+                    <connections>
+                        <outlet property="groupNameLabel" destination="bt3-pm-iKs" id="ZF0-7n-jGF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBA-cN-1QN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="29"/>
+            <point key="canvasLocation" x="610" y="-29"/>
+        </scene>
+        <!--Take Attendance View View Controller-->
+        <scene sceneID="mOd-0o-r91">
+            <objects>
+                <viewController id="znf-a4-aPA" customClass="TakeAttendanceViewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RvV-Od-phn">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QIW-qz-eb8">
+                                <rect key="frame" x="0.0" y="906" width="768" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Confirmation Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDe-tV-Ecf">
+                                        <rect key="frame" x="0.0" y="8" width="760" height="102"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="39"/>
+                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66229373216629028" green="0.12451455742120743" blue="0.1746252179145813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIQ-GK-rBd">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8c-M5-oYy">
+                                        <rect key="frame" x="0.0" y="0.0" width="760" height="102"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="39"/>
+                                        <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66229373219999998" green="0.1245145574" blue="0.17462521789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kx1-Sy-NkN"/>
+                    </view>
+                    <connections>
+                        <outlet property="Banner" destination="C8c-M5-oYy" id="5ks-8D-BMz"/>
+                        <outlet property="ConfirmationMessage" destination="fDe-tV-Ecf" id="Ngs-Lq-9hZ"/>
+                        <outlet property="groupNameLabel" destination="C8c-M5-oYy" id="tho-rp-g9i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJr-ht-6vt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="-29"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="eoH-bV-Ill"/>
         <segue reference="m4e-vx-aj0"/>
     </inferredMetricsTieBreakers>
 </document>
