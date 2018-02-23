@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupPage: UIViewController {
+class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var groupNameLabel: UILabel!
     var groupName = String()
@@ -23,6 +23,25 @@ class GroupPage: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        for (String) in groupArr
+        {
+            print(String)
+        }
+        return groupArr[groupName]!.studentList.count
+    }
+    
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = groupArr[groupName]!.studentList[indexPath.row].FirstName
+        
+        return cell
+        
     }
     
 

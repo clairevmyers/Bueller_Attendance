@@ -8,32 +8,36 @@
 
 import UIKit
 
+var myindex = 0
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    
+    //Table view that displays groupNames
     @IBOutlet weak var groupTable: UITableView!
-    var name = "Soccer"
     
+    //Placeholder variable for GroupPage
+    var name = String()
+    
+    //Button to advance to GroupPage
     @IBOutlet var AttendanceButton: UIButton!
+    
+    //Text that displays date
     @IBOutlet weak var DateText: UILabel!
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Print date and time in debugger
         print("\(hour):\(minute):\(second)")
         print("\(day).\(month)")
         
+        //Made DateText display the date
         DateText.text =  "\(month)/\(day)"
-        
-
     }
 
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
+    //Function to tell the tableView how many cells it needs
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return groupArr.count
@@ -50,18 +54,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        myindex = indexPath.row
+        print(name)
+        name = groupNames[indexPath.row]
+        print(name)
+        performSegue(withIdentifier: "mainToGroupPage", sender: self)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if(segue.identifier == "viewToGroupPage" )
+        if( segue.identifier == "mainToGroupPage")
         {
             var view = segue.destination as! GroupPage
             view.groupName = (groupArr[name]?.name)!
         }
     }
-
-    func viewDidAppear()
+    
+    override func didReceiveMemoryWarning()
     {
-        super.viewDidLoad()
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
+
 }
 
