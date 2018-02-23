@@ -108,7 +108,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="eoH-bV-Ill"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="GroupToView" id="eoH-bV-Ill"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmj-la-uG1">
@@ -164,7 +164,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vpC-aa-Oho" kind="show" id="nQB-NZ-kkL"/>
+                                    <segue destination="vpC-aa-Oho" kind="show" identifier="GroupToStudent" id="nQB-NZ-kkL"/>
                                 </connections>
                             </button>
                         </subviews>

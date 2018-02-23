@@ -17,6 +17,7 @@ class StudentView: UIViewController {
     @IBOutlet weak var StudentID: UITextField!
     @IBOutlet weak var GradeControl: UISegmentedControl!
     var Grade = 9;
+    var passedGroupFurther = GroupClass()
     
     @IBOutlet weak var addStudentButton: UIButton!
     override func viewDidLoad() {
@@ -42,10 +43,10 @@ class StudentView: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        var group = segue.destination as! GroupView
+        var view = segue.destination as! GroupView
         var student = StudentClass(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
-    groupArr[0].studentList.append(student)
-        //group.passedStudent = student
+    groupArr[passedGroupFurther.index].studentList.append(student)
+        view.passedGroup = passedGroupFurther
         print("This is running")
         
         

@@ -38,7 +38,15 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        //if(segue = GroupToStudent)
+        //{
+         //   var view = segue.destination as! StudentView
+         //   view.passedGroupFurther = passedGroup
+        //}
+        
+    }
     
     
      func viewDidAppear()
