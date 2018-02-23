@@ -2,24 +2,22 @@
 //  GroupPage.swift
 //  Bueller Attendance
 //
-//  Created by Claire on 2/1/18.
+//  Created by Grace Hansen on 2/21/18.
 //  Copyright © 2018 District196. All rights reserved.
 //
 
 import UIKit
 
-class GroupPage: UIViewController {
+class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var groupNameLabel: UILabel!
+    var groupName = String()
 
-    @IBAction func stepper(_ sender: UIStepper) {
-        stepLabel.text = String(sender.value)
-    }
-    
-    @IBOutlet weak var stepLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        groupNameLabel.text = groupName
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,15 +25,32 @@ class GroupPage: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        for (String) in groupArr
+        {
+            print(String)
+        }
+        return groupArr[groupName]!.studentList.count
     }
-    */
+    
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = groupArr[groupName]!.studentList[indexPath.row].FirstName
+        
+        return cell
+        
+    }
+    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "groupPageToTakeAttendanceView")
+        {
+            var view = segue.destination as! TakeAttendanceViewViewController
+            view.groupName = groupName
+        }
+    }
 
 }

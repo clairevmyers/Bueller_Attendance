@@ -36,18 +36,18 @@ class CreateGroup: UIViewController {
     {
         var group = GroupClass(tempName: groupName.text!)
         passingGroup = group
-        groupArr.append(group)
-        group.index = getGroupIndex(groupName: groupName.text!)
+        groupArr[groupName.text!] = group
+        groupNames.append(groupName.text!)
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        var index = getGroupIndex(groupName: groupName.text!)
+        //var index = getGroupIndex(groupName: groupName.text!)
         var destination = segue.destination as! GroupView
         destination.passedGroup = passingGroup
         destination.name = groupName.text!
-        destination.indexNum = index
+        //destination.indexNum = index
     }
     
 

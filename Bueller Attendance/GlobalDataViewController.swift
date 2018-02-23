@@ -7,17 +7,14 @@
 //
 
 import UIKit
-
+//Global date and time variables
 let date = Date()
 let calendar = Calendar.current
-
 let hour = calendar.component(.hour, from: date)
 let minute = calendar.component(.minute, from: date)
 let second = calendar.component(.second, from: date)
-
 let day = calendar.component(.day, from: date)
 let month = calendar.component(.month, from: date)
-var groupArr = [GroupClass]()
 
 func getGroupIndex(groupName: String) -> Int
 {
@@ -34,6 +31,7 @@ func getGroupIndex(groupName: String) -> Int
 }
 
 
-class GlobalDataViewController: UIViewController {
+class GlobalDataViewController: UIViewController
+{
 
 }

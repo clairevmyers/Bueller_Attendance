@@ -8,65 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDelegate, UITableViewDataSource {
+var myindex = 0
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var PickerLabel: UILabel!
-    @IBOutlet weak var SchedulePicker: UIPickerView!
-    @IBOutlet weak var startTimeField: UITextField!
-    @IBOutlet weak var endTimeField: UITextField!
-    
+    //Table view that displays groupNames
     @IBOutlet weak var groupTable: UITableView!
     
+    //Placeholder variable for GroupPage
+    var name = String()
     
-    let startPicker = UIDatePicker()
+    //Button to advance to GroupPage
+    @IBOutlet var AttendanceButton: UIButton!
     
-    let schedules = ["Normal", "Flex", "Pepfest", "Finals Day 1", "Finals Day 2"]
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        var segue = segue.destination as! CreateGroup
-    
-    }
-    func numberOfComponents(in pickerView: UIPickerView) -> Int
-    {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
-    {
-        return schedules[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
-    {
-        return schedules.count
-    }
-    
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
-    {
-        PickerLabel.text = schedules[row]
-    }
-    
-    
-    
+    //Text that displays date
     @IBOutlet weak var DateText: UILabel!
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Print date and time in debugger
         print("\(hour):\(minute):\(second)")
         print("\(day).\(month)")
         
+        //Made DateText display the date
         DateText.text =  "\(month)/\(day)"
     }
 
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
+    //Function to tell the tableView how many cells it needs
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return groupArr.count
@@ -75,13 +46,37 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = groupArr[indexPath.row].name
+        cell.textLabel?.text = groupNames[indexPath.row]
         
         return cell
         
     }
-
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        myindex = indexPath.row
+        print(name)
+        name = groupNames[indexPath.row]
+        print(name)
+        performSegue(withIdentifier: "mainToGroupPage", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if( segue.identifier == "mainToGroupPage")
+        {
+            var view = segue.destination as! GroupPage
+            view.groupName = (groupArr[name]?.name)!
+        }
+    }
+    
+    override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
 }
 
