@@ -161,7 +161,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vpC-aa-Oho" kind="show" identifier="GroupToStudent" id="nQB-NZ-kkL"/>
+                                    <segue destination="vpC-aa-Oho" kind="show" identifier="groupToStudent" id="nQB-NZ-kkL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGJ-zl-AZT">
