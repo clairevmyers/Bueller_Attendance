@@ -46,10 +46,16 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        super.prepare(for: segue, sender: sender)
         if(segue.identifier == "groupPageToTakeAttendanceView")
         {
-            var view = segue.destination as! TakeAttendanceViewViewController
-            view.groupName = groupName
+            let view = segue.destination as? TakeAttendanceView
+            view?.groupName.text = groupName
+        }
+        else if(segue.identifier == "groupPageToMain")
+        {
+            dismiss(animated: true, completion: nil)
         }
     }
 

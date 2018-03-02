@@ -23,6 +23,7 @@ class TakeAttendanceViewViewController: UIViewController, AVCaptureMetadataOutpu
         super.viewDidLoad()
      
         groupNameLabel.text! = groupName
+        //create session
         let session = AVCaptureSession()
         
         //define capture device
@@ -66,12 +67,12 @@ class TakeAttendanceViewViewController: UIViewController, AVCaptureMetadataOutpu
                     var message = "\(object.stringValue)"
                     var firstHalf = message.dropFirst(10)
                     let finalString = firstHalf.dropLast(2)
-                    /*let alert = UIAlertController(title: "QR CODE", message: object.stringValue, preferredStyle: .alert)
+                    let alert = UIAlertController(title: "QR CODE", message: object.stringValue, preferredStyle: .alert)
                      alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
                      alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: {(nil) in
                      UIPasteboard.general.string = object.stringValue}))
                      
-                     present(alert, animated: true, completion: nil) */
+                     present(alert, animated: true, completion: nil) 
                     ConfirmationMessage.text = " Student \(finalString) has checked in!"
                 }
             }
