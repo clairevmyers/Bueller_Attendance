@@ -65,7 +65,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if( segue.identifier == "mainToGroupPage")
+        if( segue.identifier ==
+            "mainToGroupPage")
         {
             var view = segue.destination as! GroupPage
             view.groupName = (groupArr[name]?.name)!

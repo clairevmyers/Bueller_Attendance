@@ -36,11 +36,19 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = groupArr[name]!.studentList[indexPath.row].FirstName
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! StudentCell
+        cell.First.text = groupArr[name]!.studentList[indexPath.row].FirstName
+        cell.Last.text = groupArr[name]!.studentList[indexPath.row].LastName
+        cell.ID.text = groupArr[name]!.studentList[indexPath.row].StudentID
         
         return cell
 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        myindex = indexPath.row
+        performSegue(withIdentifier: "groupCellToStudent", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
