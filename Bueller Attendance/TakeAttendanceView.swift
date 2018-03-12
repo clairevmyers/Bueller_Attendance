@@ -15,6 +15,7 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
     @IBOutlet weak var groupName: UILabel!
     @IBOutlet weak var confirmationMessage: UILabel!
     var video = AVCaptureVideoPreviewLayer()
+    var groupString = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,8 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
         video.frame = view.layer.bounds
         view.layer.addSublayer(video)
         
+        groupName.text = groupString
+        
         self.view.bringSubview(toFront: confirmationMessage)
         self.view.bringSubview(toFront: groupName)
         self.view.bringSubview(toFront: banner1)
@@ -54,6 +57,25 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
         
         session.startRunning()
         
+
+        
+    }
+    
+    func checkQR(groupName: String, code: String) -> BooleanLiteralType
+    {
+        var here = false
+        let temp = groupDict[groupName]?.studentList
+        for Student in ((groupDict[groupString]?.studentList))!
+        {
+            if Student.StudentID == code
+            {
+                Student.AttendanceStatus = "P"
+                here = true
+            }
+        }
+        
+        
+        return here
     }
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection)
@@ -64,12 +86,33 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
             {
                 if object.type == AVMetadataObject.ObjectType.qr
                 {
+                    
                     let message = "\(String(describing: object.stringValue))"
                     let firstHalf = message.dropFirst(10)
-                    let finalString = firstHalf.dropLast(2)
-                    confirmationMessage.text = " Student \(finalString) has checked in!"
+                    let finalString = String(firstHalf.dropLast(2))
+                    
+                    var validQR = checkQR(groupName: groupName.text!, code:finalString)
+                    
+                    if(validQR == true)
+                    {
+                        confirmationMessage.text = " Student \(finalString) has checked in!"
+                    }
+
                 }
             }
         }
+        
+        func prepare(for segue: UIStoryboardSegue, sender: Any?)
+        {
+            
+            super.prepare(for: segue, sender: sender)
+            if(segue.identifier == "groupPageToTakeAttendanceView")
+            {
+                let view = segue.destination as? GroupPage
+                view?.groupName = groupString
+            }
+        }
+        
+        
 }
 }

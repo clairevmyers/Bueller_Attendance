@@ -36,7 +36,7 @@ class CreateGroup: UIViewController {
     {
         var group = GroupClass(tempName: groupName.text!)
         passingGroup = group
-        groupArr[groupName.text!] = group
+        groupDict[groupName.text!] = group
         groupNames.append(groupName.text!)
         
     }

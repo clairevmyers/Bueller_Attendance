@@ -17,10 +17,12 @@ let day = calendar.component(.day, from: date)
 let month = calendar.component(.month, from: date)
 
 //Dictionary key = groupName and GroupClass
-var groupArr = [String: GroupClass]()
+var groupDict = [String: GroupClass]()
 
 //Array of keys/groupNames
 var groupNames = [String]()
+
+
 
 
 class GlobalDataViewController: UIViewController
