@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Function to tell the tableView how many cells it needs
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return groupArr.count
+        return groupDict.count
     }
     
     
@@ -69,7 +69,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             "mainToGroupPage")
         {
             var view = segue.destination as! GroupPage
-            view.groupName = (groupArr[name]?.name)!
+            view.groupName = (groupDict[name]?.name)!
         }
     }
     

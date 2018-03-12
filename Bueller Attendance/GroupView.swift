@@ -26,20 +26,20 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         print(indexNum)
-        for (String) in groupArr
+        for (String) in groupDict
         {
             print(String)
         }
-        return groupArr[name]!.studentList.count
+        return groupDict[name]!.studentList.count
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! StudentCell
-        cell.First.text = groupArr[name]!.studentList[indexPath.row].FirstName
-        cell.Last.text = groupArr[name]!.studentList[indexPath.row].LastName
-        cell.ID.text = groupArr[name]!.studentList[indexPath.row].StudentID
+        cell.First.text = groupDict[name]!.studentList[indexPath.row].FirstName
+        cell.Last.text = groupDict[name]!.studentList[indexPath.row].LastName
+        cell.ID.text = groupDict[name]!.studentList[indexPath.row].StudentID
         
         return cell
 

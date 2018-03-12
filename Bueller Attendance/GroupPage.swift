@@ -27,18 +27,20 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        for (String) in groupArr
+        for (String) in groupDict
         {
             print(String)
         }
-        return groupArr[groupName]!.studentList.count
+        return groupDict[groupName]!.studentList.count
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = groupArr[groupName]!.studentList[indexPath.row].FirstName
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SummaryCell
+        cell.first.text = groupDict[groupName]!.studentList[indexPath.row].FirstName
+        cell.last.text = groupDict[groupName]!.studentList[indexPath.row].LastName
+        cell.status.text = groupDict[groupName]!.studentList[indexPath.row].AttendanceStatus
         
         return cell
         
@@ -51,7 +53,7 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if(segue.identifier == "groupPageToTakeAttendanceView")
         {
             let view = segue.destination as? TakeAttendanceView
-            view?.groupName.text = groupName
+            view?.groupString = groupName
         }
         else if(segue.identifier == "groupPageToMain")
         {
