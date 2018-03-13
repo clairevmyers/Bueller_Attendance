@@ -46,6 +46,26 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+        let present = UIContextualAction(style: .normal, title: "Present")
+        {
+            (action, view, nil) in
+            print("present")
+        }
+        return UISwipeActionsConfiguration(actions:[present])
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+        let delete = UIContextualAction(style: .destructive, title: "Delete")
+        {
+            (action, view, nil) in
+            print("Delete")
+        }
+        return UISwipeActionsConfiguration(actions:[delete])
+        
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
