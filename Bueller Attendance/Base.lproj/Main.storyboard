@@ -597,16 +597,12 @@
                         <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="2od-o5-rUC"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="TkN-zF-bhX" appends="YES" id="n7w-u8-P9K"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="groupNameLabel" destination="bt3-pm-iKs" id="ZF0-7n-jGF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBA-cN-1QN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="TkN-zF-bhX"/>
             </objects>
             <point key="canvasLocation" x="609.375" y="-29.296874999999996"/>
         </scene>

@@ -53,6 +53,7 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
             (action, view, nil) in
             print("present")
         }
+        //present.backgroundColor
         return UISwipeActionsConfiguration(actions:[present])
     }
     

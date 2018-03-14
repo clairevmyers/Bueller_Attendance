@@ -36,6 +36,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         DateText.text =  "\(month)/\(day)"
     }
 
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+        let present = UIContextualAction(style: .normal, title: "Present")
+        {
+            (action, view, nil) in
+            print("present")
+        }
+        return UISwipeActionsConfiguration(actions:[present])
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+        let delete = UIContextualAction(style: .destructive, title: "Delete")
+        {
+            (action, view, nil) in
+            print("Delete")
+        }
+        return UISwipeActionsConfiguration(actions:[delete])
+        
+    }
 
     //Function to tell the tableView how many cells it needs
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
