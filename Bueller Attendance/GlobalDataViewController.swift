@@ -21,6 +21,7 @@ var groupDict = [String: GroupClass]()
 
 //Array of keys/groupNames
 var groupNames = [String]()
+var currentGroup = String()
 
 
 

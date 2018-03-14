@@ -497,7 +497,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NSB-I8-RVF" kind="show" identifier="groupPageToTakeAttendanceVie" id="jL7-1L-HhS"/>
+                                    <segue destination="NSB-I8-RVF" kind="show" identifier="groupPageToTakeAttendanceView" id="3Cy-23-9Jb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXt-oO-8aF">
@@ -683,7 +683,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="58H-Nd-j1K" kind="show" identifier="takeAttendanceToGroupView" id="ESc-BH-7FD"/>
+                                            <segue destination="58H-Nd-j1K" kind="show" identifier="takeAttendanceToGroupPage" id="AYQ-fj-JCm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -702,7 +702,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GA7-Yc-TGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413.28125" y="-29.296874999999996"/>
+            <point key="canvasLocation" x="1505" y="-29"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

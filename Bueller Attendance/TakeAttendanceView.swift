@@ -47,7 +47,8 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
         video = AVCaptureVideoPreviewLayer(session: session)
         video.frame = view.layer.bounds
         view.layer.addSublayer(video)
-        
+
+        //print(groupString)
         groupName.text = groupString
         
         self.view.bringSubview(toFront: confirmationMessage)
@@ -64,8 +65,8 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
     func checkQR(groupName: String, code: String) -> BooleanLiteralType
     {
         var here = false
-        let temp = groupDict[groupName]?.studentList
-        for Student in ((groupDict[groupString]?.studentList))!
+        let temp = groupDict[groupString]?.studentList
+        for Student in (temp)!
         {
             if Student.StudentID == code
             {
@@ -105,14 +106,12 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
         func prepare(for segue: UIStoryboardSegue, sender: Any?)
         {
             
-            super.prepare(for: segue, sender: sender)
-            if(segue.identifier == "groupPageToTakeAttendanceView")
+            if(segue.identifier == "takeAttendanceToGroupPage")
             {
                 let view = segue.destination as? GroupPage
+                print(groupName)
                 view?.groupName = groupString
             }
         }
-        
-        
 }
 }
