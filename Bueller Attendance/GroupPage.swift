@@ -27,30 +27,27 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        for (String) in groupDict
-        {
-            print(String)
-        }
-        return groupDict[groupName]!.studentList.count
+
+        return groupDict[currentGroup]!.studentList.count
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SummaryCell
-        cell.first.text = groupDict[groupName]!.studentList[indexPath.row].FirstName
-        cell.last.text = groupDict[groupName]!.studentList[indexPath.row].LastName
-        cell.status.text = groupDict[groupName]!.studentList[indexPath.row].AttendanceStatus
+        cell.first.text = groupDict[currentGroup]!.studentList[indexPath.row].FirstName
+        cell.last.text = groupDict[currentGroup]!.studentList[indexPath.row].LastName
+        cell.status.text = groupDict[currentGroup]!.studentList[indexPath.row].AttendanceStatus
         
         return cell
         
     }
     
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
         
-        super.prepare(for: segue, sender: sender)
-        if(segue.identifier == "groupPageToTakeAttendanceView")
+    if(segue.identifier == "groupPageToTakeAttendanceView")
         {
             let view = segue.destination as? TakeAttendanceView
             view?.groupString = groupName
@@ -59,6 +56,10 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         {
             dismiss(animated: true, completion: nil)
         }
+        else if( segue.identifier == "toTest")
+        {
+            let view = segue.destination as? Tesst
+            view?.groupName = groupName
+        }
     }
-
 }

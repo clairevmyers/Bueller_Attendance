@@ -57,9 +57,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         myindex = indexPath.row
-        print(name)
+
         name = groupNames[indexPath.row]
-        print(name)
+        currentGroup = name
         performSegue(withIdentifier: "mainToGroupPage", sender: self)
     }
     
