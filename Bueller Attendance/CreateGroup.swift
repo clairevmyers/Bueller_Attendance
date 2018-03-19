@@ -80,6 +80,10 @@ class CreateGroup: UIViewController {
         return result
     }
     
-   
+    @IBAction func cancel(_ sender: Any)
+    {
+        dismiss(animated: true, completion: nil)
+    }
+    
 
 }

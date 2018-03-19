@@ -38,6 +38,18 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.first.text = groupDict[currentGroup]!.studentList[indexPath.row].FirstName
         cell.last.text = groupDict[currentGroup]!.studentList[indexPath.row].LastName
         cell.status.text = groupDict[currentGroup]!.studentList[indexPath.row].AttendanceStatus
+        if(cell.status.text == "A")
+        {
+            cell.status.textColor = UIColor.red
+        }
+        else if(cell.status.text == "P")
+        {
+            cell.status.textColor = UIColor.green
+        }
+        else  
+        {
+            cell.status.textColor = UIColor.yellow
+        }
         
         return cell
         
@@ -54,12 +66,8 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         else if(segue.identifier == "groupPageToMain")
         {
-            dismiss(animated: true, completion: nil)
+
         }
-        else if( segue.identifier == "toTest")
-        {
-            let view = segue.destination as? Tesst
-            view?.groupName = groupName
-        }
+
     }
 }

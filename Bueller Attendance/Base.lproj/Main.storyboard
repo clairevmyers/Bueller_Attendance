@@ -49,6 +49,17 @@
                                         <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UP-Zo-AJE">
+                                        <rect key="frame" x="18" y="8" width="82" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancel:" destination="GO3-5H-JGF" eventType="touchUpInside" id="ZdS-lm-CkP"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.086975678023757511" green="0.29611883128966948" blue="0.66147182642487046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -90,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIE-R6-pJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-413" y="851"/>
+            <point key="canvasLocation" x="-413.28125" y="850.78125"/>
         </scene>
         <!--Group View-->
         <scene sceneID="09B-II-eRt">
@@ -157,11 +168,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="68" id="qDJ-cR-jJQ" customClass="StudentCell" customModule="Bueller_Attendance" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="704" height="68"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="qDJ-cR-jJQ" customClass="StudentCell" customModule="Bueller_Attendance" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="704" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qDJ-cR-jJQ" id="FBs-nq-omb">
-                                            <rect key="frame" x="0.0" y="0.0" width="704" height="67.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="704" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwE-da-qVY">
@@ -338,6 +349,17 @@
                                                     <segue destination="YpO-wC-PuT" kind="show" id="0E8-gO-dOo"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0n-fk-fPt">
+                                                <rect key="frame" x="20" y="8" width="74" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancel:" destination="vpC-aa-Oho" eventType="touchUpInside" id="v2E-8Y-1cA"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.01430633817" green="0.37427137310000003" blue="0.1185076234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -383,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WV3-hr-swM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2530" y="1561"/>
+            <point key="canvasLocation" x="-2530.46875" y="1560.9375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -512,11 +534,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="bzu-fU-AmJ" customClass="SummaryCell" customModule="Bueller_Attendance" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="509" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="55" id="bzu-fU-AmJ" customClass="SummaryCell" customModule="Bueller_Attendance" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="509" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bzu-fU-AmJ" id="MYg-OG-tce">
-                                            <rect key="frame" x="0.0" y="0.0" width="509" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="509" height="54.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frx-Qk-fch">
@@ -641,9 +663,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13j-G8-ft9">
-                                        <rect key="frame" x="693" y="28" width="46" height="30"/>
+                                        <rect key="frame" x="662" y="28" width="88" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="58H-Nd-j1K" kind="show" identifier="takeAttendanceToGroupPage" id="AYQ-fj-JCm"/>
                                         </connections>
@@ -664,13 +689,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GA7-Yc-TGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1505" y="-29"/>
+            <point key="canvasLocation" x="1504.6875" y="-29.296874999999996"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="3Cy-23-9Jb"/>
         <segue reference="AYQ-fj-JCm"/>
         <segue reference="fI3-Nx-47S"/>
         <segue reference="RvF-6c-UzG"/>
-        <segue reference="0E8-gO-dOo"/>
+        <segue reference="m4e-vx-aj0"/>
     </inferredMetricsTieBreakers>
 </document>
