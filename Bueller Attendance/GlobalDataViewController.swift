@@ -22,6 +22,7 @@ var groupDict = [String: GroupClass]()
 //Array of keys/groupNames
 var groupNames = [String]()
 var currentGroup = String()
+var currentStudent = StudentClass(First: "Grace", Last: "Hansen", ID: "762954", Year: 11)
 
 
 

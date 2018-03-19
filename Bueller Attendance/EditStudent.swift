@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StudentView: UIViewController {
+class EditStudent: UIViewController {
     
     
     
@@ -19,7 +19,7 @@ class StudentView: UIViewController {
     var Grade = 9;
     var groupName = String()
     
-    @IBOutlet weak var addStudentButton: UIButton!
+    @IBOutlet weak var changeStudent: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +28,9 @@ class StudentView: UIViewController {
     
     override func viewDidAppear(_ animated: Bool)
     {
-      
+        FirstName.text = currentStudent.FirstName
+        LastName.text = currentStudent.LastName
+        StudentID.text = currentStudent.StudentID
     }
     
     
@@ -39,7 +41,7 @@ class StudentView: UIViewController {
     }
     
     
-  
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
@@ -51,18 +53,12 @@ class StudentView: UIViewController {
         
     }
     
-
+    
     @IBAction func cancel(_ sender: Any)
     {
         dismiss(animated: true, completion: nil)
     }
     
 }
-
-
-
-
-
-
 
 
