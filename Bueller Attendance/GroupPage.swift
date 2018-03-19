@@ -46,7 +46,7 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         {
             cell.status.textColor = UIColor.green
         }
-        else  
+        else
         {
             cell.status.textColor = UIColor.yellow
         }
