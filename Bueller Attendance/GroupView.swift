@@ -30,16 +30,16 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         {
             print(String)
         }
-        return groupDict[name]!.studentList.count
+        return groupDict[currentGroup]!.studentList.count
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! StudentCell
-        cell.First.text = groupDict[name]!.studentList[indexPath.row].FirstName
-        cell.Last.text = groupDict[name]!.studentList[indexPath.row].LastName
-        cell.ID.text = groupDict[name]!.studentList[indexPath.row].StudentID
+        cell.First.text = groupDict[currentGroup]!.studentList[indexPath.row].FirstName
+        cell.Last.text = groupDict[currentGroup]!.studentList[indexPath.row].LastName
+        cell.ID.text = groupDict[currentGroup]!.studentList[indexPath.row].StudentID
         
         return cell
 
@@ -48,6 +48,7 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         myindex = indexPath.row
+        currentStudent = (groupDict[currentGroup]?.studentList[indexPath.row])!
         performSegue(withIdentifier: "groupCellToStudent", sender: self)
     }
     

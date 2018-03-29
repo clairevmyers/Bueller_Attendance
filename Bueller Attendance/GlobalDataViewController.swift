@@ -24,7 +24,23 @@ var groupNames = [String]()
 var currentGroup = String()
 var currentStudent = StudentClass(First: "Grace", Last: "Hansen", ID: "762954", Year: 11)
 
+public func findStudent(code: String, first: String, last: String, identification: String, grade: Int)
+{
+    for student in (groupDict[currentGroup]?.studentList)!
+    {
+        
+        var ID = student.StudentID
+        if( ID == code)
+        {
+            
+            student.FirstName = first
+            student.LastName = last
+            student.Grade = grade
+            student.StudentID = identification
 
+        }
+    }
+}
 
 
 class GlobalDataViewController: UIViewController

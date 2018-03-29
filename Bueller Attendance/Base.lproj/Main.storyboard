@@ -186,6 +186,9 @@
                                         <state key="normal" title="Done!">
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="YpO-wC-PuT" kind="show" id="p6r-kJ-x5m"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDm-Cy-BaJ">
                                         <rect key="frame" x="54" y="296" width="74" height="21"/>
@@ -312,6 +315,7 @@
                                             <outlet property="First" destination="wwP-1C-ao1" id="MXr-hc-c4a"/>
                                             <outlet property="ID" destination="WMq-Bl-LV5" id="kqa-s1-KLb"/>
                                             <outlet property="Last" destination="iwE-da-qVY" id="rm5-pF-oDw"/>
+                                            <segue destination="8qO-jT-MPY" kind="show" identifier="groupCellToStudent" id="1Yh-qK-Lbd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -803,7 +807,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="AYQ-fj-JCm"/>
-        <segue reference="fI3-Nx-47S"/>
-        <segue reference="0E8-gO-dOo"/>
+        <segue reference="eoH-bV-Ill"/>
+        <segue reference="p6r-kJ-x5m"/>
     </inferredMetricsTieBreakers>
 </document>

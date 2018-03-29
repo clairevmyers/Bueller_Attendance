@@ -45,10 +45,9 @@ class EditStudent: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        var view = segue.destination as! GroupView
-        var student = StudentClass(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
-        groupDict[groupName]!.studentList.append(student)
-        view.name = groupName
+        print(StudentID.text!)
+        findStudent(code: currentStudent.StudentID, first: FirstName.text!, last: LastName.text!, identification: StudentID.text!, grade: 11)
+        //view.name = groupName
         
         
     }
