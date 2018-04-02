@@ -18,8 +18,10 @@ class EditStudent: UIViewController {
     @IBOutlet weak var GradeControl: UISegmentedControl!
     var Grade = 9;
     var groupName = String()
-    
+    var returnTo = String()
     @IBOutlet weak var changeStudent: UIButton!
+    @IBOutlet weak var returnToView: UIButton!
+    @IBOutlet weak var returnToPage: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,9 +30,20 @@ class EditStudent: UIViewController {
     
     override func viewDidAppear(_ animated: Bool)
     {
+        
         FirstName.text = currentStudent.FirstName
         LastName.text = currentStudent.LastName
         StudentID.text = currentStudent.StudentID
+        
+        if(returnTo == "View")
+        {
+            returnToPage.isEnabled = false
+        }
+        else if(returnTo == "Group")
+        {
+            returnToView.isEnabled = false
+        }
+        
     }
     
     
@@ -45,9 +58,7 @@ class EditStudent: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        print(StudentID.text!)
         findStudent(code: currentStudent.StudentID, first: FirstName.text!, last: LastName.text!, identification: StudentID.text!, grade: 11)
-        //view.name = groupName
         
         
     }

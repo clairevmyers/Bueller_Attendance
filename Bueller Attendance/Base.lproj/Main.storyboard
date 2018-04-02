@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Chalkduster.ttf">
-            <string>Chalkduster</string>
-        </array>
-        <array key="DK Midnight Chalker.otf">
-            <string>DKMidnightChalker-Regular</string>
-        </array>
         <array key="SFUIText.ttf">
             <string>.SFUIText</string>
         </array>
@@ -179,17 +173,6 @@
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDR-ds-IVR">
-                                        <rect key="frame" x="193" y="350" width="54" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                        <state key="normal" title="Done!">
-                                            <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="YpO-wC-PuT" kind="show" id="p6r-kJ-x5m"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDm-Cy-BaJ">
                                         <rect key="frame" x="54" y="296" width="74" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -197,6 +180,28 @@
                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Vw-yK-ctl">
+                                        <rect key="frame" x="199" y="367" width="217" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                        <state key="normal" title="Return to Group Page">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="58H-Nd-j1K" kind="show" identifier="studentToGroupPage" id="7EJ-Eo-jSZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDR-ds-IVR">
+                                        <rect key="frame" x="29" y="333" width="230" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                        <state key="normal" title="Return to Add Students">
+                                            <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="YpO-wC-PuT" kind="show" identifier="studentToGroupView" id="nq3-gU-juG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.018687097355723381" green="0.37212896347045898" blue="0.11946602910757065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -210,6 +215,8 @@
                         <outlet property="LastName" destination="JZx-b7-deh" id="c4T-MB-Kxs"/>
                         <outlet property="StudentID" destination="IPv-4x-kF9" id="D2U-Kg-fR9"/>
                         <outlet property="changeStudent" destination="pDR-ds-IVR" id="9yH-ma-gH4"/>
+                        <outlet property="returnToPage" destination="3Vw-yK-ctl" id="PdS-Qh-Q6J"/>
+                        <outlet property="returnToView" destination="pDR-ds-IVR" id="6vF-EM-M7f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2h7-bD-tr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -681,6 +688,7 @@
                                             <outlet property="first" destination="Frx-Qk-fch" id="X6a-zn-hm8"/>
                                             <outlet property="last" destination="n2W-oH-GGT" id="9Eh-Fr-v6h"/>
                                             <outlet property="status" destination="lqf-S4-Hci" id="qn8-ci-jeq"/>
+                                            <segue destination="8qO-jT-MPY" kind="show" identifier="groupCellToStudent" id="ChG-HT-vck"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -806,8 +814,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AYQ-fj-JCm"/>
-        <segue reference="eoH-bV-Ill"/>
-        <segue reference="p6r-kJ-x5m"/>
+        <segue reference="7EJ-Eo-jSZ"/>
+        <segue reference="fI3-Nx-47S"/>
+        <segue reference="nq3-gU-juG"/>
+        <segue reference="ChG-HT-vck"/>
     </inferredMetricsTieBreakers>
 </document>

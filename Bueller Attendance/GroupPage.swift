@@ -55,6 +55,12 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        myindex = indexPath.row
+        currentStudent = (groupDict[currentGroup]?.studentList[indexPath.row])!
+        performSegue(withIdentifier: "groupCellToStudent", sender: self)
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
@@ -67,6 +73,11 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         else if(segue.identifier == "groupPageToMain")
         {
 
+        }
+        else if(segue.identifier == "groupCellToStudent")
+        {
+            let view = segue.destination as? EditStudent
+            view?.returnTo = "Page"
         }
 
     }

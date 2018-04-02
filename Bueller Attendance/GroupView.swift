@@ -60,6 +60,12 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 var view = segue.destination as! StudentView
                 view.groupName = name
         }
+        
+        else if(segue.identifier == "groupCellToStudent")
+        {
+            var view = segue.destination as! EditStudent
+            view.returnTo = "View"
+        }
     }
     
  
