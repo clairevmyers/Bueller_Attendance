@@ -10,12 +10,14 @@ import UIKit
 import AVFoundation
 class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
+    @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var banner1: UIView!
     @IBOutlet weak var banner2: UIView!
     @IBOutlet weak var groupName: UILabel!
     @IBOutlet weak var confirmationMessage: UILabel!
     var video = AVCaptureVideoPreviewLayer()
     var groupString = String()
+    var ID = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +51,7 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
         view.layer.addSublayer(video)
 
         //print(groupString)
-        groupName.text = groupString
+        groupName.text = currentGroup
         
         self.view.bringSubview(toFront: confirmationMessage)
         self.view.bringSubview(toFront: groupName)
@@ -62,10 +64,13 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
         
     }
     
+    @IBAction func addStudent(_ sender: Any){
+        
+        }
     func checkQR(groupName: String, code: String) -> BooleanLiteralType
     {
         var here = false
-        let temp = groupDict[groupString]?.studentList
+        let temp = groupDict[currentGroup]?.studentList
         for Student in (temp)!
         {
             if Student.StudentID == code
@@ -78,6 +83,7 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
         
         return here
     }
+    @IBOutlet weak var addStudent: UIButton!
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection)
     {
@@ -91,6 +97,7 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
                     let message = "\(String(describing: object.stringValue))"
                     let firstHalf = message.dropFirst(10)
                     let finalString = String(firstHalf.dropLast(2))
+                    ID = finalString
                     
                     var validQR = checkQR(groupName: groupName.text!, code:finalString)
                     
@@ -98,20 +105,37 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
                     {
                         confirmationMessage.text = " Student \(finalString) has checked in!"
                     }
+                    
+                    else if (finalString.count == 6)
+                    {
+                        
+                        confirmationMessage.text = " Want to add student \(finalString)?"
+                        addButton.setTitleColor(UIColor.white, for: .normal)
+                        addButton.isEnabled = true
+                    }
 
                 }
             }
         }
+    }
         
-        func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
         {
+            print("preparing")
             
             if(segue.identifier == "takeAttendanceToGroupPage")
             {
                 let view = segue.destination as? GroupPage
-                print(groupName)
-                view?.groupName = groupString
+        
             }
+            else if(segue.identifier == "takeAttendanceToStudent")
+            {
+                let view = segue.destination as? StudentView
+                view?.returnTo = "Attendance"
+                newID = ID
+                
+            }
+    
         }
-}
+
 }

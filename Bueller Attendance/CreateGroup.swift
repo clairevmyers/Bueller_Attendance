@@ -47,6 +47,7 @@ class CreateGroup: UIViewController {
         var destination = segue.destination as! GroupView
         destination.passedGroup = passingGroup
         destination.name = groupName.text!
+        currentGroup = groupName.text!
         //destination.indexNum = index
     }
     

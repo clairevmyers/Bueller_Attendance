@@ -79,5 +79,25 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         currentStudent = name!
         performSegue(withIdentifier: "mainToGroupPage", sender: self)
     }
+    @IBAction func ExportStudentInfo(_ sender: Any) {
+        var attendanceExport = "Student ID, First Name, Last Name, Attendance Status,"
+        
+        for student in (groupDict[currentGroup]?.studentList)!
+        {
+            
+            attendanceExport.append(student.StudentID + ",")
+            attendanceExport.append(student.FirstName + ",")
+            attendanceExport.append(student.LastName + ",")
+            attendanceExport.append(student.AttendanceStatus)
+            attendanceExport.append("\n")
+            
+            let activityVC = UIActivityViewController(activityItems: [attendanceExport], applicationActivities: nil)
+            present(activityVC, animated: true, completion: nil)
+            if let popOver = activityVC.popoverPresentationController
+            {
+                popOver.sourceView = self.view
+            }
+        }
+    }
 }
 
