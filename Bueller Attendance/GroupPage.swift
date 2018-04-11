@@ -12,14 +12,14 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var groupNameLabel: UILabel!
     var groupName = String()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         groupNameLabel.text = groupName
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -27,7 +27,7 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-
+        
         return groupDict[currentGroup]!.studentList.count
     }
     
@@ -55,40 +55,29 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
-    {
-        let present = UIContextualAction(style: .normal, title: "Present")
-        {
-            (action, view, nil) in
-            print("present")
-        }
-        //present.backgroundColor
-        return UISwipeActionsConfiguration(actions:[present])
-    }
     
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
-    {
-        let delete = UIContextualAction(style: .destructive, title: "Delete")
-        {
-            (action, view, nil) in
-            print("Delete")
-        }
-        return UISwipeActionsConfiguration(actions:[delete])
-        
-    }
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         
-    if(segue.identifier == "groupPageToTakeAttendanceView")
+        if(segue.identifier == "groupPageToTakeAttendanceView")
         {
             let view = segue.destination as? TakeAttendanceView
             view?.groupString = groupName
         }
         else if(segue.identifier == "groupPageToMain")
         {
-
+            
         }
-
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        myindex = indexPath.row
+        
+        var name = groupDict[currentGroup]?.studentList[indexPath.row]
+        currentStudent = name!
+        performSegue(withIdentifier: "mainToGroupPage", sender: self)
     }
 }
+
