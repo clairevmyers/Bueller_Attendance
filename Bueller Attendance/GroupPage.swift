@@ -55,7 +55,13 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        myindex = indexPath.row
+        currentStudent = (groupDict[currentGroup]?.studentList[indexPath.row])!
+        performSegue(withIdentifier: "groupCellToStudent", sender: self)
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         
@@ -68,16 +74,12 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         {
             
         }
-        
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    {
-        myindex = indexPath.row
-        
-        var name = groupDict[currentGroup]?.studentList[indexPath.row]
-        currentStudent = name!
-        performSegue(withIdentifier: "mainToGroupPage", sender: self)
+        else if(segue.identifier == "groupCellToStudent")
+        {
+            let view = segue.destination as? EditStudent
+            view?.returnTo = "Page"
+        }
+
     }
     @IBAction func ExportStudentInfo(_ sender: Any) {
         var attendanceExport = "Student ID, First Name, Last Name, Attendance Status,"
