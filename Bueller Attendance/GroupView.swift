@@ -58,7 +58,7 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if(segue.identifier == "groupToStudent")
         {
                 var view = segue.destination as! StudentView
-                view.groupName = name
+            view.returnTo = "View"
         }
         
         else if(segue.identifier == "groupCellToStudent")
@@ -76,7 +76,7 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad()
      {
         super.viewDidLoad()
-        groupLabel.text = name
+        groupLabel.text = groupDict[currentGroup]?.name
 
     }
     
@@ -86,7 +86,8 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
    
-
+    
+   
 
     
 

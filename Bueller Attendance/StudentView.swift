@@ -18,8 +18,10 @@ class StudentView: UIViewController {
     @IBOutlet weak var GradeControl: UISegmentedControl!
     var Grade = 9;
     var groupName = String()
+    var returnTo = String()
     
-    @IBOutlet weak var addStudentButton: UIButton!
+    @IBOutlet weak var returnToPage: UIButton!
+    @IBOutlet weak var returnToAttendance: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +30,16 @@ class StudentView: UIViewController {
     
     override func viewDidAppear(_ animated: Bool)
     {
-      
+      StudentID.text = newID
+    
+        if(returnTo == "View")
+        {
+            returnToAttendance.isEnabled = false
+        }
+        else if(returnTo == "Attendance")
+        {
+            returnToPage.isEnabled = false
+        }
     }
     
     
@@ -43,11 +54,21 @@ class StudentView: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
+        if(segue.identifier == "studentToGroup")
+        {
         var view = segue.destination as! GroupView
         var student = StudentClass(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
         groupDict[currentGroup]!.studentList.append(student)
         view.name = groupName
-        
+        newID = ""
+        }
+        else if (segue.identifier == "studentToTakeAttendance")
+            {
+                var student = StudentClass(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
+                groupDict[currentGroup]!.studentList.append(student)
+                
+            newID = ""
+        }
         
     }
     

@@ -34,12 +34,12 @@ class EditStudent: UIViewController {
         FirstName.text = currentStudent.FirstName
         LastName.text = currentStudent.LastName
         StudentID.text = currentStudent.StudentID
-        
+
         if(returnTo == "View")
         {
             returnToPage.isEnabled = false
         }
-        else if(returnTo == "Group")
+        else if(returnTo == "Page")
         {
             returnToView.isEnabled = false
         }
