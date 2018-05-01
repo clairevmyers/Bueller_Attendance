@@ -37,6 +37,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //group.restore(fileName: "Saved Name")
     }
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+        let present = UIContextualAction(style: .normal, title: "Present")
+        {
+            (action, view, nil) in
+            
+            print("present")
+        }
+        return UISwipeActionsConfiguration(actions:[present])
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+        let index = indexPath.row
+        let name = groupNames[indexPath.row]
+        
+        
+        
+        
+        let delete = UIContextualAction(style: .destructive, title: "Delete")
+        {
+            (action, view, nil) in
+            deleteGroup(name: name, index: index)
+            tableView.reloadData()
+            print("Delete")
+        }
+        return UISwipeActionsConfiguration(actions:[delete])
+        
+    }
 
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
     {

@@ -37,10 +37,13 @@ class EditStudent: UIViewController {
 
         if(returnTo == "View")
         {
-            returnToPage.isEnabled = false
+            returnToPage.isHidden = true
+             returnToPage.isEnabled = false
         }
         else if(returnTo == "Page")
         {
+    
+            returnToView.isHidden = true
             returnToView.isEnabled = false
         }
         
@@ -55,11 +58,11 @@ class EditStudent: UIViewController {
     
     
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        findStudent(code: currentStudent.StudentID, first: FirstName.text!, last: LastName.text!, identification: StudentID.text!, grade: 11)
+       
         
+        alterStudent(code: currentStudent.StudentID, first: FirstName.text!, last: LastName.text!, identification: StudentID.text!, grade: 11)
         
     }
     
