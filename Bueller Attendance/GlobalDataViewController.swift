@@ -25,7 +25,17 @@ var currentGroup = String()
 var newID = String()
 var currentStudent = StudentClass(First: "Grace", Last: "Hansen", ID: "762954", Year: 11)
 
-public func findStudent(code: String, first: String, last: String, identification: String, grade: Int)
+
+
+public func deleteGroup(name: String, index: Int)
+{
+    groupDict.removeValue(forKey: name)
+    groupNames.remove(at: index)
+    
+    }
+
+
+public func alterStudent(code: String, first: String, last: String, identification: String, grade: Int)
 {
     for student in (groupDict[currentGroup]?.studentList)!
     {
@@ -38,11 +48,15 @@ public func findStudent(code: String, first: String, last: String, identificatio
             student.LastName = last
             student.Grade = grade
             student.StudentID = identification
-
+            
         }
     }
 }
 
+public func deleteStudent(index: Int)
+{
+    groupDict[currentGroup]?.studentList.remove(at: index)
+}
 
 class GlobalDataViewController: UIViewController
 {

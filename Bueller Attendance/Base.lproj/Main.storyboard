@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SFUIText.ttf">
-            <string>.SFUIText</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Create Group-->
         <scene sceneID="GxT-Vb-ShW">
@@ -165,17 +160,6 @@
                                         </segments>
                                         <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </segmentedControl>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhS-td-Cke">
-                                        <rect key="frame" x="8" y="8" width="76" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                        <state key="normal" title="Cancel">
-                                            <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="cancel:" destination="8qO-jT-MPY" eventType="touchUpInside" id="N8e-ea-apv"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDm-Cy-BaJ">
                                         <rect key="frame" x="54" y="296" width="74" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -184,10 +168,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Vw-yK-ctl">
-                                        <rect key="frame" x="199" y="367" width="217" height="34"/>
+                                        <rect key="frame" x="197" y="373" width="48" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                        <state key="normal" title="Return to Group Page">
+                                        <state key="normal" title="Done">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -195,14 +179,25 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDR-ds-IVR">
-                                        <rect key="frame" x="29" y="333" width="230" height="34"/>
+                                        <rect key="frame" x="196" y="331" width="48" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                        <state key="normal" title="Return to Add Students">
+                                        <state key="normal" title="Done">
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="YpO-wC-PuT" kind="show" identifier="studentToGroupView" id="nq3-gU-juG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhS-td-Cke">
+                                        <rect key="frame" x="0.0" y="0.0" width="98" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancel:" destination="8qO-jT-MPY" eventType="touchUpInside" id="N8e-ea-apv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -224,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2h7-bD-tr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="1981"/>
+            <point key="canvasLocation" x="147.65625" y="1980.4687499999998"/>
         </scene>
         <!--Group View-->
         <scene sceneID="09B-II-eRt">
@@ -235,9 +230,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4f-tC-udu">
-                                <rect key="frame" x="8" y="9" width="100" height="30"/>
+                                <rect key="frame" x="8" y="9" width="123" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".SFUIText" family=".SF UI Text" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -337,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7OF-kB-Pab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2838" y="1545"/>
+            <point key="canvasLocation" x="-2838.28125" y="1544.53125"/>
         </scene>
         <!--Student View-->
         <scene sceneID="ceV-Qk-xIb">
@@ -445,18 +440,29 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEI-7M-FSn" customClass="returnToPage">
-                                                <rect key="frame" x="30" y="339" width="217" height="36"/>
+                                                <rect key="frame" x="112" y="339" width="217" height="36"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                                <state key="normal" title="Return to Group Page">
+                                                <state key="normal" title="Done">
                                                     <color key="titleColor" red="0.98780487804878048" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="YpO-wC-PuT" kind="show" identifier="studentToGroup" id="0E8-gO-dOo"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAi-VF-c7D" customClass="returnToAttendance">
+                                                <rect key="frame" x="196" y="373" width="48" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <state key="normal" title="Done">
+                                                    <color key="titleColor" red="0.99597054719924927" green="0.99614065885543823" blue="0.9959598183631897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="NSB-I8-RVF" kind="show" identifier="studentToTakeAttendance" id="3Fr-MB-vdz"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0n-fk-fPt">
-                                                <rect key="frame" x="20" y="8" width="74" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="49"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                                 <state key="normal" title="Cancel">
@@ -466,19 +472,8 @@
                                                     <action selector="cancel:" destination="vpC-aa-Oho" eventType="touchUpInside" id="v2E-8Y-1cA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAi-VF-c7D" customClass="returnToAttendance">
-                                                <rect key="frame" x="160" y="373" width="262" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                                <state key="normal" title="Return to Take Attendance">
-                                                    <color key="titleColor" red="0.99597054719924927" green="0.99614065885543823" blue="0.9959598183631897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="NSB-I8-RVF" kind="show" identifier="studentToTakeAttendance" id="3Fr-MB-vdz"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.01430633817" green="0.37427137310000003" blue="0.1185076234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.013308232650160789" green="0.37609589099884033" blue="0.11908627301454544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="440" id="2UT-vG-1Ut"/>
                                             <constraint firstAttribute="height" constant="415" id="6o0-8U-cCI"/>
@@ -521,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WV3-hr-swM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-814" y="1063"/>
+            <point key="canvasLocation" x="-814.0625" y="1062.890625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -615,17 +610,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQc-7t-9EN">
-                                <rect key="frame" x="16" y="7" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DKMidnightChalker-Regular" family="DK Midnight Chalker" pointSize="30"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="groupPageToMain" id="fI3-Nx-47S"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BK-hn-o4U">
                                 <rect key="frame" x="78" y="99" width="634" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -641,7 +625,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXt-oO-8aF">
                                 <rect key="frame" x="141" y="317" width="509" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DKMidnightChalker-Regular" family="DK Midnight Chalker" pointSize="41"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="41"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -701,11 +685,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMC-st-y2d">
-                                <rect key="frame" x="283" y="953" width="124" height="51"/>
+                                <rect key="frame" x="93" y="951" width="244" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Export"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                <state key="normal" title="Export Today">
+                                    <color key="titleColor" red="0.98780487800000005" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="ExportStudentInfo:" destination="58H-Nd-j1K" eventType="touchUpInside" id="0Xw-vB-5K9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5H-O2-gnh">
+                                <rect key="frame" x="448" y="951" width="202" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                <state key="normal" title="Export All">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQc-7t-9EN">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="groupPageToMain" id="fI3-Nx-47S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -766,7 +772,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13j-G8-ft9">
-                                        <rect key="frame" x="662" y="28" width="88" height="39"/>
+                                        <rect key="frame" x="645" y="28" width="105" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
                                         <state key="normal" title="Back">
@@ -797,11 +803,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3Fr-MB-vdz"/>
+        <segue reference="3Cy-23-9Jb"/>
         <segue reference="7EJ-Eo-jSZ"/>
-        <segue reference="eoH-bV-Ill"/>
+        <segue reference="fI3-Nx-47S"/>
         <segue reference="nQB-NZ-kkL"/>
-        <segue reference="0E8-gO-dOo"/>
-        <segue reference="1Yh-qK-Lbd"/>
+        <segue reference="nq3-gU-juG"/>
+        <segue reference="ChG-HT-vck"/>
     </inferredMetricsTieBreakers>
 </document>

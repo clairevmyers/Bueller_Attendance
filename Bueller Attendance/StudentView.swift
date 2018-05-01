@@ -34,10 +34,12 @@ class StudentView: UIViewController {
     
         if(returnTo == "View")
         {
+            returnToAttendance.isHidden = true
             returnToAttendance.isEnabled = false
         }
         else if(returnTo == "Attendance")
         {
+            returnToPage.isHidden = true
             returnToPage.isEnabled = false
         }
     }
