@@ -34,6 +34,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //Made DateText display the date
         DateText.text =  "\(month)/\(day)"
+        
+        //group.restore(fileName: "Saved Name")
     }
 
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
@@ -87,7 +89,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         if( segue.identifier ==
             "mainToGroupPage")
-        {
+    {
             var view = segue.destination as! GroupPage
             view.groupName = (groupDict[name]?.name)!
         }

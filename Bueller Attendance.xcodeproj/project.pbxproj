@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E435B5B208114B70084DE1B /* PersistentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E435B5A208114B70084DE1B /* PersistentData.swift */; };
+		7E435B5C2089024F0084DE1B /* EditStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FCD13A2060203A0065EEB2 /* EditStudent.swift */; };
 		7E9ED46C2049C4C80087E0DA /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9ED46B2049C4C80087E0DA /* StudentCell.swift */; };
 		A50BBBF1200E7C68006D64EC /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176032005373C008A4753 /* StudentClass.swift */; };
 		A50BBBF2200FBB7B006D64EC /* GroupClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176062007E6E2008A4753 /* GroupClass.swift */; };
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E435B5A208114B70084DE1B /* PersistentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentData.swift; sourceTree = "<group>"; };
 		7E9ED46B2049C4C80087E0DA /* StudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
 		A50BBBF420125963006D64EC /* tableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCell.swift; sourceTree = "<group>"; };
 		A50BBBF620320947006D64EC /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
@@ -145,6 +148,7 @@
 				F445BAD31FD9B025005957BD /* Assets.xcassets */,
 				F445BAD81FD9B025005957BD /* Info.plist */,
 				7E9ED46B2049C4C80087E0DA /* StudentCell.swift */,
+				7E435B5A208114B70084DE1B /* PersistentData.swift */,
 			);
 			path = "Bueller Attendance";
 			sourceTree = "<group>";
@@ -308,7 +312,9 @@
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
 				A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */,
 				7E9ED46C2049C4C80087E0DA /* StudentCell.swift in Sources */,
+				7E435B5B208114B70084DE1B /* PersistentData.swift in Sources */,
 				F4752E051FE2F07B004E15E6 /* GlobalDataViewController.swift in Sources */,
+				7E435B5C2089024F0084DE1B /* EditStudent.swift in Sources */,
 				A50BBBF2200FBB7B006D64EC /* GroupClass.swift in Sources */,
 				A5E175C41FFD4C77008A4753 /* StudentView.swift in Sources */,
 				A55638882049CCAB0002F361 /* SummaryCell.swift in Sources */,

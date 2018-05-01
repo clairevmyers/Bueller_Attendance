@@ -18,6 +18,7 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         groupNameLabel.text = groupName
         
+        
     }
     
     override func didReceiveMemoryWarning() {
