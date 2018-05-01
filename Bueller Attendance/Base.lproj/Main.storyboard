@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chalkduster.ttf">
+            <string>Chalkduster</string>
+        </array>
+        <array key="DK Midnight Chalker.otf">
+            <string>DKMidnightChalker-Regular</string>
+        </array>
+        <array key="SFUIText.ttf">
+            <string>.SFUIText</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Create Group-->
         <scene sceneID="GxT-Vb-ShW">
@@ -219,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2h7-bD-tr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="147.65625" y="1980.4687499999998"/>
+            <point key="canvasLocation" x="230" y="1997"/>
         </scene>
         <!--Group View-->
         <scene sceneID="09B-II-eRt">
@@ -237,7 +248,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="eoH-bV-Ill"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="GroupToView" id="eoH-bV-Ill"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRu-xd-xXi">
@@ -343,7 +354,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JbG-CL-sYl">
-                                <rect key="frame" x="164" y="304.5" width="440" height="415"/>
+                                <rect key="frame" x="164" y="305" width="440" height="415"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gn8-yA-OdS">
@@ -380,7 +391,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rkN-oL-FTZ">
-                                                <rect key="frame" x="145" y="271.5" width="238" height="46"/>
+                                                <rect key="frame" x="145" y="272" width="238" height="46"/>
                                                 <color key="backgroundColor" red="0.018687097355723381" green="0.37212896347045898" blue="0.11946602910757065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="238" id="A2k-uf-l6M"/>
@@ -716,6 +727,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="2od-o5-rUC"/>
                     </view>
                     <connections>
@@ -804,10 +816,10 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="3Cy-23-9Jb"/>
-        <segue reference="7EJ-Eo-jSZ"/>
+        <segue reference="pjL-Fe-gZK"/>
         <segue reference="fI3-Nx-47S"/>
         <segue reference="nQB-NZ-kkL"/>
-        <segue reference="nq3-gU-juG"/>
+        <segue reference="m4e-vx-aj0"/>
         <segue reference="ChG-HT-vck"/>
     </inferredMetricsTieBreakers>
 </document>

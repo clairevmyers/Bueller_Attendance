@@ -77,7 +77,8 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
      {
         super.viewDidLoad()
         groupLabel.text = groupDict[currentGroup]?.name
-
+        passedGroup.restore(fileName: "Saved Groups")
+        passedStudent.restore(fileName: "Saved Student")
     }
     
     override func didReceiveMemoryWarning() {

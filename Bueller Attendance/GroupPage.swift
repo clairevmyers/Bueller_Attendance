@@ -12,23 +12,23 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var groupNameLabel: UILabel!
     var groupName = String()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         groupNameLabel.text = groupName
         
+        
     }
-
-    override func didReceiveMemoryWarning()
-    {
+    
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     //return length of array
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-
+        
         return groupDict[currentGroup]!.studentList.count
     }
     
@@ -127,8 +127,8 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     //Prepare for Segueing to a new viewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        //GroupPage to TakeAttendanceView
-    if(segue.identifier == "groupPageToTakeAttendanceView")
+        
+        if(segue.identifier == "groupPageToTakeAttendanceView")
         {
             let view = segue.destination as? TakeAttendanceView
             view?.groupString = groupName
@@ -137,7 +137,7 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         //GroupPage to viewController
         else if(segue.identifier == "groupPageToMain")
         {
-
+            
         }
         
         //GroupPage to EditStudent
@@ -190,3 +190,4 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
+

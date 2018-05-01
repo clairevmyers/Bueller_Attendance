@@ -34,6 +34,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //Made DateText display the date
         DateText.text =  "\(month)/\(day)"
+        
+        //group.restore(fileName: "Saved Name")
     }
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
     {
@@ -65,6 +67,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
 
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+        let present = UIContextualAction(style: .normal, title: "Present")
+        {
+            (action, view, nil) in
+            print("present")
+        }
+        return UISwipeActionsConfiguration(actions:[present])
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+        let delete = UIContextualAction(style: .destructive, title: "Delete")
+        {
+            (action, view, nil) in
+            print("Delete")
+        }
+        return UISwipeActionsConfiguration(actions:[delete])
+        
+    }
 
     //Function to tell the tableView how many cells it needs
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -96,7 +118,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         if( segue.identifier ==
             "mainToGroupPage")
-        {
+    {
             var view = segue.destination as! GroupPage
             view.groupName = (groupDict[name]?.name)!
         }

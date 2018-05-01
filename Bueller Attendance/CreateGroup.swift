@@ -38,7 +38,7 @@ class CreateGroup: UIViewController {
         passingGroup = group
         groupDict[groupName.text!] = group
         groupNames.append(groupName.text!)
-        
+        group.archive(fileName: "Saved Groups")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
@@ -60,6 +60,7 @@ class CreateGroup: UIViewController {
         if( enable == true)
         {
             doneButton.isEnabled = true
+            
         }
         else
         {
