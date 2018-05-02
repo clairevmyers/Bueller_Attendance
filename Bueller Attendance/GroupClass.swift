@@ -15,6 +15,7 @@ class GroupClass : Codable{
     var studentList = [StudentClass]()
     var checkInDuration = 0.0
     var index = Int()
+    var exportLog = String()
     
     init()
     {

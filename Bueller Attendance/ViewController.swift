@@ -53,9 +53,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let index = indexPath.row
         let name = groupNames[indexPath.row]
         
-        
-        
-        
         let delete = UIContextualAction(style: .destructive, title: "Delete")
         {
             (action, view, nil) in
