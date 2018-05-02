@@ -16,9 +16,6 @@
         <array key="DK Midnight Chalker.otf">
             <string>DKMidnightChalker-Regular</string>
         </array>
-        <array key="SFUIText.ttf">
-            <string>.SFUIText</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Create Group-->
@@ -817,9 +814,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="3Cy-23-9Jb"/>
         <segue reference="7EJ-Eo-jSZ"/>
-        <segue reference="fI3-Nx-47S"/>
+        <segue reference="eoH-bV-Ill"/>
         <segue reference="nQB-NZ-kkL"/>
         <segue reference="nq3-gU-juG"/>
-        <segue reference="ChG-HT-vck"/>
+        <segue reference="1Yh-qK-Lbd"/>
     </inferredMetricsTieBreakers>
 </document>
