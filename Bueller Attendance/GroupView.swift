@@ -77,6 +77,10 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
      {
         super.viewDidLoad()
         groupLabel.text = groupDict[currentGroup]?.name
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         passedGroup.restore(fileName: "Saved Groups")
         passedStudent.restore(fileName: "Saved Student")
     }
