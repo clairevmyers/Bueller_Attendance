@@ -20,8 +20,9 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
     }
-    
-    override func didReceiveMemoryWarning() {
+
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -127,8 +128,8 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     //Prepare for Segueing to a new viewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        
-        if(segue.identifier == "groupPageToTakeAttendanceView")
+        //GroupPage to TakeAttendanceView
+    if(segue.identifier == "groupPageToTakeAttendanceView")
         {
             let view = segue.destination as? TakeAttendanceView
             view?.groupString = groupName
