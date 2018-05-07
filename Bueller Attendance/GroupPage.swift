@@ -92,6 +92,7 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     {
         //Creation of the cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SummaryCell
+        
         cell.first.text = groupDict[currentGroup]!.studentList[indexPath.row].FirstName
         cell.last.text = groupDict[currentGroup]!.studentList[indexPath.row].LastName
         cell.status.text = groupDict[currentGroup]!.studentList[indexPath.row].AttendanceStatus

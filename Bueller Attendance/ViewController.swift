@@ -23,6 +23,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Text that displays date
     @IBOutlet weak var DateText: UILabel!
     
+    //required init?(coder aDecoder: NSCoder) {
+        //
+    //}
     
     override func viewDidLoad()
     {
@@ -35,7 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //Made DateText display the date
         DateText.text =  "\(month)/\(day)"
         
-        //group.restore(fileName: "Saved Name")
+        
     }
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
     {
