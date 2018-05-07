@@ -27,6 +27,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //
     //}
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        gD.restore(fileName: "Group D")
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        gD.restore(fileName: "Group D")
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

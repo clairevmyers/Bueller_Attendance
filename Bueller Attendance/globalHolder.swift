@@ -10,9 +10,12 @@ import Foundation
 class globalHolder : Codable
 {
     var groupD = groupDict
+    var groupN = groupNames
     
     func archive(fileName: String)
     {
+        groupD = groupDict
+        groupN = groupNames
         let documentsDirectory = FileManager().urls(for: .documentDirectory,
                                                     in: .userDomainMask).first!
         let archiveURL = documentsDirectory.appendingPathComponent(fileName)
@@ -54,6 +57,9 @@ class globalHolder : Codable
                                                                      from: recoveredDataCoded)
                 print("Data successfully recovered from file.")
                 groupD = recoveredData.groupD
+                groupDict = groupD
+                groupN = recoveredData.groupN
+                groupNames = groupN
                 
             }
             catch
