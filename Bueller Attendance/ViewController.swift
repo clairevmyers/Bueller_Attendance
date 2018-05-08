@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //Made DateText display the date
         DateText.text =  "\(month)/\(day)"
         
-        //group.restore(fileName: "Saved Name")
+        
     }
 
     

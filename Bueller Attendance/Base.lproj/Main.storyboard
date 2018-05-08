@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chalkduster.ttf">
+            <string>Chalkduster</string>
+        </array>
+        <array key="DK Midnight Chalker.otf">
+            <string>DKMidnightChalker-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Create Group-->
         <scene sceneID="GxT-Vb-ShW">
@@ -829,6 +837,6 @@
         <segue reference="fI3-Nx-47S"/>
         <segue reference="nQB-NZ-kkL"/>
         <segue reference="nq3-gU-juG"/>
-        <segue reference="ChG-HT-vck"/>
+        <segue reference="1Yh-qK-Lbd"/>
     </inferredMetricsTieBreakers>
 </document>
