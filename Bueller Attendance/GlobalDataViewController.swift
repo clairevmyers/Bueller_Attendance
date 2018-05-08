@@ -54,9 +54,21 @@ public func alterStudent(code: String, first: String, last: String, identificati
     }
 }
 
+
 public func deleteStudent(index: Int)
 {
     groupDict[currentGroup]?.studentList.remove(at: index)
+}
+
+public func resetAttendanceStatus()
+{
+    for (name, group) in groupDict
+    {
+        for (student) in (groupDict[name]?.studentList)!
+        {
+            student.AttendanceStatus = "A"
+        }
+    }
 }
 
 class GlobalDataViewController: UIViewController

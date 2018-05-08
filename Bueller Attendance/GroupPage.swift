@@ -139,7 +139,7 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         //GroupPage to viewController
         else if(segue.identifier == "groupPageToMain")
         {
-            
+            dismiss(animated: true, completion: nil)
         }
         
         //GroupPage to EditStudent
@@ -169,7 +169,8 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         //File name
-        let fileName = "\(currentGroup).csv"
+        print("\(currentGroup) \(month)/\(day)")
+        let fileName = "\(currentGroup) \(month)/\(day).csv"
         let path = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileName)
         do
         {
