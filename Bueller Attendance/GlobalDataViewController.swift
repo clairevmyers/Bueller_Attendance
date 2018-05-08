@@ -71,6 +71,18 @@ public func resetAttendanceStatus()
     }
 }
 
+public func checkDate()->Bool
+{
+    if(savedMonthDay == currentMonthDay)
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+
 class GlobalDataViewController: UIViewController
 {
 
