@@ -11,13 +11,13 @@ class globalHolder : Codable
 {
     var groupD = groupDict
     var groupN = groupNames
-    var mD = monthDay
+    var sMD = savedMonthDay
     
     func archive(fileName: String)
     {
         groupD = groupDict
         groupN = groupNames
-        mD = monthDay
+        sMD = savedMonthDay
         let documentsDirectory = FileManager().urls(for: .documentDirectory,
                                                     in: .userDomainMask).first!
         let archiveURL = documentsDirectory.appendingPathComponent(fileName)
@@ -62,8 +62,8 @@ class globalHolder : Codable
                 groupDict = groupD
                 groupN = recoveredData.groupN
                 groupNames = groupN
-                mD = recoveredData.mD
-                monthDay = mD
+                sMD = recoveredData.sMD
+                savedMonthDay = sMD
                 
             }
             catch

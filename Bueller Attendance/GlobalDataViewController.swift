@@ -15,7 +15,8 @@ let minute = calendar.component(.minute, from: date)
 let second = calendar.component(.second, from: date)
 let day = calendar.component(.day, from: date)
 let month = calendar.component(.month, from: date)
-var monthDay = "\(month)\(day)"
+var currentMonthDay = "\(month)\(day)"
+var savedMonthDay = "\(month)\(day)"
 
 //Dictionary key = groupName and GroupClass
 var groupDict = [String: GroupClass]()
@@ -68,6 +69,18 @@ public func resetAttendanceStatus()
         {
             student.AttendanceStatus = "A"
         }
+    }
+}
+
+public func checkDate()->Bool
+{
+    if(savedMonthDay == currentMonthDay)
+    {
+        return true
+    }
+    else
+    {
+        return false
     }
 }
 
