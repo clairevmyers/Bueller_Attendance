@@ -578,7 +578,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4j5-II-eYc">
-                                <rect key="frame" x="194" y="782" width="380" height="53"/>
+                                <rect key="frame" x="194" y="669" width="380" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="39"/>
@@ -587,6 +587,18 @@
                                 </state>
                                 <connections>
                                     <segue destination="GO3-5H-JGF" kind="show" id="XyC-iO-RZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHl-lo-PlF">
+                                <rect key="frame" x="133" y="799" width="502" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90423697233200073" green="0.11075412482023239" blue="0.18091988563537598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                <state key="normal" title="RESET ATTENDANCE STATUS">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRN-P8-RAi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -685,7 +697,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMC-st-y2d">
-                                <rect key="frame" x="93" y="951" width="244" height="53"/>
+                                <rect key="frame" x="20" y="951" width="244" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
                                 <state key="normal" title="Export Today">
@@ -696,7 +708,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5H-O2-gnh">
-                                <rect key="frame" x="448" y="951" width="202" height="53"/>
+                                <rect key="frame" x="318" y="951" width="202" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
                                 <state key="normal" title="Export All">
@@ -713,6 +725,14 @@
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="groupPageToMain" id="fI3-Nx-47S"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GN-5M-YBG">
+                                <rect key="frame" x="564" y="951" width="184" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                <state key="normal" title="Reset Log">
+                                    <color key="titleColor" red="0.90357146801682298" green="0.11198238291242318" blue="0.17974740210527002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3515547513961792" green="0.39113369584083557" blue="0.45350742340087891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -805,7 +825,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="3Cy-23-9Jb"/>
-        <segue reference="pjL-Fe-gZK"/>
+        <segue reference="7EJ-Eo-jSZ"/>
         <segue reference="fI3-Nx-47S"/>
         <segue reference="nQB-NZ-kkL"/>
         <segue reference="nq3-gU-juG"/>

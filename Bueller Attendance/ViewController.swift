@@ -23,7 +23,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Text that displays date
     @IBOutlet weak var DateText: UILabel!
     
-    
+
+    override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -37,42 +43,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //group.restore(fileName: "Saved Name")
     }
-    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
-    {
-        let present = UIContextualAction(style: .normal, title: "Present")
-        {
-            (action, view, nil) in
-            
-            print("present")
-        }
-        return UISwipeActionsConfiguration(actions:[present])
-    }
+
     
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
-    {
-        let index = indexPath.row
-        let name = groupNames[indexPath.row]
-        
-        let delete = UIContextualAction(style: .destructive, title: "Delete")
-        {
-            (action, view, nil) in
-            deleteGroup(name: name, index: index)
-            tableView.reloadData()
-            print("Delete")
-        }
-        return UISwipeActionsConfiguration(actions:[delete])
-        
-    }
-
-   
-
-    //Function to tell the tableView how many cells it needs
+    
+    //Count for number of cells in table
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return groupDict.count
     }
     
-    
+    //Initialize cells
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
 
@@ -83,17 +63,45 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    //Segue to Group page based on cell clicked
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         myindex = indexPath.row
-
+        //Get the name of the row
         name = groupNames[indexPath.row]
+        //Assign it to the currentGroup
         currentGroup = name
+        //Perform Segue to GroupPage
         performSegue(withIdentifier: "mainToGroupPage", sender: self)
     }
     
+    
+    //Trailing Swipe Function
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+        let index = indexPath.row
+        let name = groupNames[indexPath.row]
+        
+        //Delete Action
+        let delete = UIContextualAction(style: .destructive, title: "Delete")
+        {
+            (action, view, nil) in
+            deleteGroup(name: name, index: index)
+            tableView.reloadData()
+            print("Delete")
+        }
+        return UISwipeActionsConfiguration(actions:[delete])
+        
+    }
+    @IBAction func resetButton(_ sender: Any)
+    {
+        resetAttendanceStatus()
+    }
+    
+    //Prepare for Segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
+        //Main to GroupPage
         if( segue.identifier ==
             "mainToGroupPage")
     {
@@ -102,11 +110,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

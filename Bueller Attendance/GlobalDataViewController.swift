@@ -15,6 +15,7 @@ let minute = calendar.component(.minute, from: date)
 let second = calendar.component(.second, from: date)
 let day = calendar.component(.day, from: date)
 let month = calendar.component(.month, from: date)
+let monthDay = "\(month)\(day)"
 
 //Dictionary key = groupName and GroupClass
 var groupDict = [String: GroupClass]()
@@ -53,9 +54,21 @@ public func alterStudent(code: String, first: String, last: String, identificati
     }
 }
 
+
 public func deleteStudent(index: Int)
 {
     groupDict[currentGroup]?.studentList.remove(at: index)
+}
+
+public func resetAttendanceStatus()
+{
+    for (name, group) in groupDict
+    {
+        for (student) in (groupDict[name]?.studentList)!
+        {
+            student.AttendanceStatus = "A"
+        }
+    }
 }
 
 class GlobalDataViewController: UIViewController

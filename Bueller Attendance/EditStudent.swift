@@ -11,8 +11,9 @@ import UIKit
 class EditStudent: UIViewController {
     
     
-    
+    //Changed name First Name of Student
     @IBOutlet weak var FirstName: UITextField!
+    //Changed name Last Name of Student
     @IBOutlet weak var LastName: UITextField!
     @IBOutlet weak var StudentID: UITextField!
     @IBOutlet weak var GradeControl: UISegmentedControl!
