@@ -15,7 +15,8 @@ let minute = calendar.component(.minute, from: date)
 let second = calendar.component(.second, from: date)
 let day = calendar.component(.day, from: date)
 let month = calendar.component(.month, from: date)
-let monthDay = "\(month)\(day)"
+var currentMonthDay = "\(month)\(day)"
+var savedMonthDay = "\(month)\(day)"
 
 //Dictionary key = groupName and GroupClass
 var groupDict = [String: GroupClass]()
@@ -27,6 +28,7 @@ var newID = String()
 var currentStudent = StudentClass(First: "Grace", Last: "Hansen", ID: "762954", Year: 11)
 
 var gD = globalHolder()
+var StudentA = StudentClass()
 
 public func deleteGroup(name: String, index: Int)
 {
