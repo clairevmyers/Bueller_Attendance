@@ -84,6 +84,13 @@ public func checkDate()->Bool
     }
 }
 
+public  func whatDayIsIt()->[String]
+{
+    var weekDay = calendar.weekdaySymbols
+    print(weekDay)
+    return weekDay
+}
+
 class GlobalDataViewController: UIViewController
 {
 

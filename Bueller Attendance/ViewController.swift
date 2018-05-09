@@ -30,25 +30,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+    //Initialize and Restore
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
     {
+        //Restoring Data
         gD.restore(fileName: "Group D")
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
-    
     required init?(coder aDecoder: NSCoder)
     {
         gD.restore(fileName: "Group D")
         super.init(coder: aDecoder)
     }
 
+    //What happens when the viewController Loads
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        //Compare dates
+        //If the day has changed
+        whatDayIsIt()
         if (checkDate() == false)
         {
-            
+            //reset the attendance status
             resetAttendanceStatus()
         }
 
