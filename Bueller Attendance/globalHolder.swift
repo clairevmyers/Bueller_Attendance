@@ -13,6 +13,7 @@ class globalHolder : Codable
     var groupN = groupNames
     var sMD = savedMonthDay
     
+    
     func archive(fileName: String)
     {
         groupD = groupDict

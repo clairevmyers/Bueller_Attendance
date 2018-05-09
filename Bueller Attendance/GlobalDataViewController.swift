@@ -28,6 +28,7 @@ var newID = String()
 var currentStudent = StudentClass(First: "Grace", Last: "Hansen", ID: "762954", Year: 11)
 
 var gD = globalHolder()
+var StudentA = StudentClass()
 
 public func deleteGroup(name: String, index: Int)
 {
