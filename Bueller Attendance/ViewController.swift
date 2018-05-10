@@ -35,11 +35,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         //Restoring Data
         gD.restore(fileName: "Group D")
+        StudentA.restore(fileName: "StudentA")
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     required init?(coder aDecoder: NSCoder)
     {
         gD.restore(fileName: "Group D")
+        StudentA.restore(fileName: "StudentA")
         super.init(coder: aDecoder)
     }
 
