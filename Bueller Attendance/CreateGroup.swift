@@ -48,6 +48,7 @@ class CreateGroup: UIViewController {
         destination.passedGroup = passingGroup
         destination.name = groupName.text!
         currentGroup = groupName.text!
+        gD.archive(fileName: "Group D" )
         //destination.indexNum = index
     }
     

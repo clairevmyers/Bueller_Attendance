@@ -20,7 +20,7 @@ class globalHolder : Codable
         groupN = groupNames
         sMD = savedMonthDay
         let documentsDirectory = FileManager().urls(for: .documentDirectory,
-                                                    in: .userDomainMask).first!
+            in: .userDomainMask).first!
         let archiveURL = documentsDirectory.appendingPathComponent(fileName)
         do
         {

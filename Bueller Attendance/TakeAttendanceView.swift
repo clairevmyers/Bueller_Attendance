@@ -126,6 +126,7 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
             if(segue.identifier == "takeAttendanceToGroupPage")
             {
                 let view = segue.destination as? GroupPage
+                dismiss(animated: true, completion: nil)
         
             }
             else if(segue.identifier == "takeAttendanceToStudent")

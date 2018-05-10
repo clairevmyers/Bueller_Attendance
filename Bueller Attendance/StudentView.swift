@@ -69,7 +69,7 @@ class StudentView: UIViewController {
             {
                 var student = StudentClass(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
                 groupDict[currentGroup]!.studentList.append(student)
-                
+                student.archive(fileName: "Saved Student")
             newID = ""
         }
         
