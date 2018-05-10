@@ -25,6 +25,7 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
+        print(groupNames)
         print(indexNum)
         for (String) in groupDict
         {
@@ -54,7 +55,7 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-
+        gD.archive(fileName: "Group D")
         if(segue.identifier == "groupToStudent")
         {
                 var view = segue.destination as! StudentView
@@ -89,6 +90,7 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
    
     

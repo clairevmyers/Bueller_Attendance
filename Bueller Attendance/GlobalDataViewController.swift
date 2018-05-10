@@ -17,6 +17,7 @@ let day = calendar.component(.day, from: date)
 let month = calendar.component(.month, from: date)
 var currentMonthDay = "\(month)\(day)"
 var savedMonthDay = "\(month)\(day)"
+let weekday = Calendar.current.component(.weekday, from: Date())
 
 //Dictionary key = groupName and GroupClass
 var groupDict = [String: GroupClass]()
@@ -83,6 +84,36 @@ public func checkDate()->Bool
     {
         return false
     }
+}
+
+public  func isWeekend()-> Bool
+{
+    if(weekday == 2 || weekday == 7)
+    {
+        return false
+    }
+    else
+    {
+        return true
+    }
+}
+
+public func createCSVString()-> String
+{
+    //Create headers of CSV
+    var attendanceExport = "Student ID, First Name, Last Name, Attendance Status\n"
+    
+    //Add student data to CSV
+    for student in (groupDict[currentGroup]?.studentList)!
+    {
+        
+        attendanceExport.append(student.StudentID + ",")
+        attendanceExport.append(student.FirstName + ",")
+        attendanceExport.append(student.LastName + ",")
+        attendanceExport.append(student.AttendanceStatus)
+        attendanceExport.append("\n")
+    }
+    return attendanceExport
 }
 
 class GlobalDataViewController: UIViewController

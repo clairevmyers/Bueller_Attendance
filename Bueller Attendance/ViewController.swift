@@ -30,13 +30,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+    //Initialize and Restore
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
     {
+        //Restoring Data
         gD.restore(fileName: "Group D")
         StudentA.restore(fileName: "StudentA")
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
-    
     required init?(coder aDecoder: NSCoder)
     {
         gD.restore(fileName: "Group D")
@@ -44,14 +45,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.init(coder: aDecoder)
     }
 
+    //What happens when the viewController Loads
     override func viewDidLoad()
     {
+        print(groupNames)
         super.viewDidLoad()
+        //Compare dates
+        //If the day has chang
+        let addToSummary = isWeekend()
         
         if (checkDate() == false)
         {
-            
+            //reset the attendance status
             resetAttendanceStatus()
+            if(addToSummary == true)
+            {
+                
+            }
         }
 
         //Print date and time in debugger
@@ -75,7 +85,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Initialize cells
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-
+        print(groupNames)
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = groupNames[indexPath.row]
         
@@ -108,6 +118,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             (action, view, nil) in
             deleteGroup(name: name, index: index)
             tableView.reloadData()
+            gD.archive(fileName: "Group D")
             print("Delete")
         }
         return UISwipeActionsConfiguration(actions:[delete])
@@ -124,9 +135,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //Main to GroupPage
         if( segue.identifier ==
             "mainToGroupPage")
-    {
-            var view = segue.destination as! GroupPage
-            view.groupName = (groupDict[name]?.name)!
+        {
+        
         }
     }
     
