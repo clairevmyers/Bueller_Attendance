@@ -66,13 +66,13 @@ class StudentView: UIViewController {
         groupDict[currentGroup]!.studentList.append(student)
         view.name = groupName
         newID = ""
-        student.archive(fileName: "Saved Student")
+        
         }
         else if (segue.identifier == "studentToTakeAttendance")
             {
                 var student = StudentClass(First: FirstName.text!, Last: LastName.text!, ID: StudentID.text!, Year: Grade)
                 groupDict[currentGroup]!.studentList.append(student)
-                student.archive(fileName: "Saved Student")
+    
             newID = ""
         }
         

@@ -34,14 +34,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
     {
         //Restoring Data
-        gD.restore(fileName: "Group D")
-        StudentA.restore(fileName: "StudentA")
+        //gD.restore(fileName: "Group D")
+        //StudentA.restore(fileName: "StudentA")
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     required init?(coder aDecoder: NSCoder)
     {
-        gD.restore(fileName: "Group D")
-        StudentA.restore(fileName: "StudentA")
+        //gD.restore(fileName: "Group D")
+        //StudentA.restore(fileName: "StudentA")
         super.init(coder: aDecoder)
     }
 
@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //If the day has chang
         let addToSummary = isWeekend()
         
-        if (checkDate() == false)
+        if (checkDate() == true)
         {
             //reset the attendance status
             resetAttendanceStatus()

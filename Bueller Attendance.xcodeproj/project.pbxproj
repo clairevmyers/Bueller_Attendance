@@ -16,6 +16,7 @@
 		A50BBBF720320947006D64EC /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BBBF620320947006D64EC /* CreateGroup.swift */; };
 		A55638802048711C0002F361 /* TakeAttendanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556387F2048711C0002F361 /* TakeAttendanceView.swift */; };
 		A55638882049CCAB0002F361 /* SummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55638872049CCAB0002F361 /* SummaryCell.swift */; };
+		A570664220A5F87F00E95524 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570664120A5F87E00E95524 /* LandingPage.swift */; };
 		A5715146203DE4F600BCA0B6 /* GroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5715145203DE4F600BCA0B6 /* GroupPage.swift */; };
 		A5E175C41FFD4C77008A4753 /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175C31FFD4C77008A4753 /* StudentView.swift */; };
 		A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E175C51FFD4D63008A4753 /* GroupView.swift */; };
@@ -54,6 +55,7 @@
 		A50BBBF620320947006D64EC /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
 		A556387F2048711C0002F361 /* TakeAttendanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAttendanceView.swift; sourceTree = "<group>"; };
 		A55638872049CCAB0002F361 /* SummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCell.swift; sourceTree = "<group>"; };
+		A570664120A5F87E00E95524 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		A5715145203DE4F600BCA0B6 /* GroupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPage.swift; sourceTree = "<group>"; };
 		A5E175C31FFD4C77008A4753 /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
 		A5E175C51FFD4D63008A4753 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				7EE0FCCD209A24F5002B0727 /* globalHolder.swift */,
 				F445BAD51FD9B025005957BD /* LaunchScreen.storyboard */,
 				F445BAD01FD9B025005957BD /* Main.storyboard */,
+				A570664120A5F87E00E95524 /* LandingPage.swift */,
 				A5FCD13A2060203A0065EEB2 /* EditStudent.swift */,
 				A556387F2048711C0002F361 /* TakeAttendanceView.swift */,
 				F445BACE1FD9B025005957BD /* ViewController.swift */,
@@ -314,6 +317,7 @@
 				F445BACF1FD9B025005957BD /* ViewController.swift in Sources */,
 				F445BACD1FD9B025005957BD /* AppDelegate.swift in Sources */,
 				A5E175C61FFD4D63008A4753 /* GroupView.swift in Sources */,
+				A570664220A5F87F00E95524 /* LandingPage.swift in Sources */,
 				7E9ED46C2049C4C80087E0DA /* StudentCell.swift in Sources */,
 				7EE0FCCE209A24F5002B0727 /* globalHolder.swift in Sources */,
 				7E435B5B208114B70084DE1B /* PersistentData.swift in Sources */,
