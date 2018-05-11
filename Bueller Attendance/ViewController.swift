@@ -132,6 +132,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Prepare for Segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
+        gD.archive(fileName: "Group D")
+        StudentA.archive(fileName: "Student A")
         //Main to GroupPage
         if( segue.identifier ==
             "mainToGroupPage")

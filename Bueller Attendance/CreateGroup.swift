@@ -67,6 +67,8 @@ class CreateGroup: UIViewController {
         {
             doneButton.isEnabled = false
         }
+        gD.archive(fileName: "Group D")
+        StudentA.archive(fileName: "Student A")
     }
     
     func validateName (text: String) -> Bool

@@ -129,6 +129,8 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     //Prepare for Segueing to a new viewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
+        gD.archive(fileName: "Group D")
+        StudentA.archive(fileName: "Student A")
         //GroupPage to TakeAttendanceView
     if(segue.identifier == "groupPageToTakeAttendanceView")
         {

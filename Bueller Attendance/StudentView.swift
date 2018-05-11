@@ -56,6 +56,9 @@ class StudentView: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
+        gD.archive(fileName: "Group D")
+        StudentA.archive(fileName: "Student A")
+        
         if(segue.identifier == "studentToGroup")
         {
         var view = segue.destination as! GroupView
