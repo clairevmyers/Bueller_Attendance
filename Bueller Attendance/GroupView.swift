@@ -56,7 +56,8 @@ class GroupView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         gD.archive(fileName: "Group D")
-        StudentA.archive(fileName: "Student A")
+        StudentA.archive(fileName: "StudentA")
+        print("Saving and Exiting")
         if(segue.identifier == "groupToStudent")
         {
                 var view = segue.destination as! StudentView

@@ -130,7 +130,8 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         gD.archive(fileName: "Group D")
-        StudentA.archive(fileName: "Student A")
+        StudentA.archive(fileName: "StudentA")
+        print("Saving and Exiting")
         //GroupPage to TakeAttendanceView
     if(segue.identifier == "groupPageToTakeAttendanceView")
         {
