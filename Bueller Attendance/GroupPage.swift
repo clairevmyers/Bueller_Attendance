@@ -9,14 +9,21 @@
 import UIKit
 
 class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var groupNameLabel: UILabel!
     var groupName = String()
     
+    override func viewWillAppear(_ animated: Bool)
+    {
+        tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        groupNameLabel.text = groupName
+        groupNameLabel.text = currentGroup
+
         
         
     }
@@ -78,8 +85,21 @@ class GroupPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let delete = UIContextualAction(style: .destructive, title: "Delete")
         {
             (action, view, nil) in
-            deleteStudent(index: index)
-            tableView.reloadData()
+            let alert = UIAlertController(title: "Are you sure you want to delete this student?", message: "", preferredStyle: UIAlertControllerStyle.alert)
+            
+            let deleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: { action in
+                deleteStudent(index: index)
+                tableView.reloadData()
+            })
+            alert.addAction(deleteAction)
+            
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alert.addAction(cancelAction)
+            
+            self.present(alert, animated: true, completion: nil)
+            
+            
             print("Delete")
         }
         //Return Swipe Configuration

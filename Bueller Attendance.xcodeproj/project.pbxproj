@@ -11,7 +11,8 @@
 		7E435B5C2089024F0084DE1B /* EditStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FCD13A2060203A0065EEB2 /* EditStudent.swift */; };
 		7E9ED46C2049C4C80087E0DA /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9ED46B2049C4C80087E0DA /* StudentCell.swift */; };
 		7EE0FCCE209A24F5002B0727 /* globalHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0FCCD209A24F5002B0727 /* globalHolder.swift */; };
-		7EF3273220A6009B00CC2F68 /* FarrisBueller.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EF3273120A6009B00CC2F68 /* FarrisBueller.jpg */; };
+		A5082B6820A9F43300986814 /* FerrisBueller.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5082B6720A9F43200986814 /* FerrisBueller.jpg */; };
+		A5082B6A20ADE58A00986814 /* blinkingGuy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5082B6920ADE58A00986814 /* blinkingGuy.jpg */; };
 		A50BBBF1200E7C68006D64EC /* StudentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176032005373C008A4753 /* StudentClass.swift */; };
 		A50BBBF2200FBB7B006D64EC /* GroupClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E176062007E6E2008A4753 /* GroupClass.swift */; };
 		A50BBBF720320947006D64EC /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BBBF620320947006D64EC /* CreateGroup.swift */; };
@@ -52,7 +53,8 @@
 		7E435B5A208114B70084DE1B /* PersistentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentData.swift; sourceTree = "<group>"; };
 		7E9ED46B2049C4C80087E0DA /* StudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
 		7EE0FCCD209A24F5002B0727 /* globalHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalHolder.swift; sourceTree = "<group>"; };
-		7EF3273120A6009B00CC2F68 /* FarrisBueller.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = FarrisBueller.jpg; path = ../../../Desktop/FarrisBueller.jpg; sourceTree = "<group>"; };
+		A5082B6720A9F43200986814 /* FerrisBueller.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = FerrisBueller.jpg; path = ../../../Desktop/FerrisBueller.jpg; sourceTree = "<group>"; };
+		A5082B6920ADE58A00986814 /* blinkingGuy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = blinkingGuy.jpg; path = ../../../Desktop/blinkingGuy.jpg; sourceTree = "<group>"; };
 		A50BBBF420125963006D64EC /* tableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCell.swift; sourceTree = "<group>"; };
 		A50BBBF620320947006D64EC /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
 		A556387F2048711C0002F361 /* TakeAttendanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAttendanceView.swift; sourceTree = "<group>"; };
@@ -157,7 +159,8 @@
 				F445BAD81FD9B025005957BD /* Info.plist */,
 				7E9ED46B2049C4C80087E0DA /* StudentCell.swift */,
 				7E435B5A208114B70084DE1B /* PersistentData.swift */,
-				7EF3273120A6009B00CC2F68 /* FarrisBueller.jpg */,
+				A5082B6720A9F43200986814 /* FerrisBueller.jpg */,
+				A5082B6920ADE58A00986814 /* blinkingGuy.jpg */,
 			);
 			path = "Bueller Attendance";
 			sourceTree = "<group>";
@@ -287,10 +290,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5082B6820A9F43300986814 /* FerrisBueller.jpg in Resources */,
 				F445BAD71FD9B025005957BD /* LaunchScreen.storyboard in Resources */,
 				F445BAD41FD9B025005957BD /* Assets.xcassets in Resources */,
+				A5082B6A20ADE58A00986814 /* blinkingGuy.jpg in Resources */,
 				F445BAD21FD9B025005957BD /* Main.storyboard in Resources */,
-				7EF3273220A6009B00CC2F68 /* FarrisBueller.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

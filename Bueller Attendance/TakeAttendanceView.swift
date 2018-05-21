@@ -18,9 +18,8 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
     var video = AVCaptureVideoPreviewLayer()
     var groupString = String()
     var ID = String()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool)
+    {
         // Do any additional setup after loading the view, typically from a nib.
         
         //creating session
@@ -49,7 +48,7 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
         video = AVCaptureVideoPreviewLayer(session: session)
         video.frame = view.layer.bounds
         view.layer.addSublayer(video)
-
+        
         //print(groupString)
         groupName.text = currentGroup
         
@@ -60,7 +59,12 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
         
         session.startRunning()
         
-
+        
+        
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         
     }
     
@@ -126,6 +130,7 @@ class TakeAttendanceView: UIViewController, AVCaptureMetadataOutputObjectsDelega
             if(segue.identifier == "takeAttendanceToGroupPage")
             {
                 let view = segue.destination as? GroupPage
+                //view?.tableView.reloadData()
                 dismiss(animated: true, completion: nil)
         
             }

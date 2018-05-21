@@ -60,6 +60,8 @@ public func alterStudent(code: String, first: String, last: String, identificati
 
 public func deleteStudent(index: Int)
 {
+
+    
     groupDict[currentGroup]?.studentList.remove(at: index)
 }
 

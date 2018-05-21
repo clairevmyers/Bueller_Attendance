@@ -74,6 +74,7 @@ class StudentView: UIViewController {
                 groupDict[currentGroup]!.studentList.append(student)
     
             newID = ""
+                dismiss(animated: true, completion: nil)
         }
         
     }
